@@ -66,13 +66,48 @@ I'm aliang! This name is a agname in my life.And I'm a software-engineering stud
       </a>
       <br/> Ai
         </td>
-        <td align="center" width="90">
+
       
     </tr>
 </table>
 
 ![Static Badge](https://img.shields.io/badge/Level-On%20Average-yellow?style=flat)
 
+<table>
+    <tr>
+        <td align="center" width="90">
+      <a href="#my-tech-stack-">
+        <img src="https://skillicons.dev/icons?i=js" alt="js" width="45" height="45" />
+      </a>
+      <br/> JavaScript
+        </td>
+        <td align="center" width="90">
+      <a href="#my-tech-stack-">
+        <img src="https://skillicons.dev/icons?i=ts" alt="ts" width="45" height="45" />
+      </a>
+      <br/> TypeScript
+        </td>
+        <td align="center" width="90">
+      <a href="#my-tech-stack-">
+        <img src="https://skillicons.dev/icons?i=swift" alt="swift" width="45" height="45" />
+      </a>
+      <br/> Swift
+        </td>
+        <td align="center" width="90">
+      <a href="#my-tech-stack-">
+        <img src="https://skillicons.dev/icons?i=vue" alt="Vue" width="45" height="45" />
+      </a>
+      <br/> Vue
+        </td>
+        <td align="center" width="90">
+      <a href="#my-tech-stack-">
+        <img src="https://skillicons.dev/icons?i=react" alt="React" width="45" height="45" />
+      </a>
+      <br/> React
+        </td>
+    </tr>
+</table>
+![image](https://github.com/user-attachments/assets/ff9439a1-b89c-48dc-9eef-519603594990)
 
 ![Static Badge](https://img.shields.io/badge/Level-Learning-red?style=flat)
 
