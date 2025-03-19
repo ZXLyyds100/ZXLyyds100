@@ -54,18 +54,7 @@ I'm aliang! This name is a agname in my life.And I'm a software-engineering stud
       </a>
       <br/> idea
         </td>
-        <td align="center" width="90">
-      <a href="#my-tech-stack-">
-        <img src="https://skillicons.dev/icons?i=clion" alt="Clion" width="45" height="45" />
-      </a>
-      <br/> CLion
-        </td>
-        <td align="center" width="90">
-      <a href="#my-tech-stack-">
-        <img src="https://skillicons.dev/icons?i=ai" alt="ai" width="45" height="45" />
-      </a>
-      <br/> Ai
-        </td>
+        
 
       
     </tr>
@@ -107,7 +96,7 @@ I'm aliang! This name is a agname in my life.And I'm a software-engineering stud
         </td>
     </tr>
 </table>
-![image](https://github.com/user-attachments/assets/ff9439a1-b89c-48dc-9eef-519603594990)
+
 
 ![Static Badge](https://img.shields.io/badge/Level-Learning-red?style=flat)
 
