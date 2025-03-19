@@ -58,6 +58,7 @@ I'm **Aliang**! This is my nickname in life. I'm a **software engineering studen
       <img src="https://skillicons.dev/icons?i=docker" width="45" height="45"/>
       <br/> Docker
     </td>
+    
   </tr>
 </table>
 
@@ -72,6 +73,27 @@ I'm **Aliang**! This is my nickname in life. I'm a **software engineering studen
       </a>
       <br/> Linux
         </td>
+      <td align="center" width="90">
+      <img src="https://skillicons.dev/icons?i=html" width="45" height="45"/>
+      <br/> HTML
+    </td>
+      <td align="center" width="90">
+      <img src="https://skillicons.dev/icons?i=css" width="45" height="45"/>
+      <br/> CSS
+    </td>
+</td>
+      <td align="center" width="90">
+      <img src="https://skillicons.dev/icons?i=javascript" width="45" height="45"/>
+      <br/> JS
+    </td>
+    </td>
+      <td align="center" width="90">
+      <img src="https://skillicons.dev/icons?i=redis" width="45" height="45"/>
+      <br/> Redis
+    </td>
+
+
+      
     </tr>
 </table>
 
