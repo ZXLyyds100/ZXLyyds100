@@ -63,40 +63,33 @@ I'm **Aliang**! This is my nickname in life. I'm a **software engineering studen
 </table>
 
 ---
-
 ![Static Badge](https://img.shields.io/badge/Level-Learning-red?style=flat)
 <table>
     <tr>
         <td align="center" width="90">
-      <a href="#my-tech-stack-">
-        <img src="https://skillicons.dev/icons?i=linux" alt="linux" width="45" height="45" />
-      </a>
-      <br/> Linux
+            <a href="#my-tech-stack-">
+                <img src="https://skillicons.dev/icons?i=linux" alt="linux" width="45" height="45" />
+            </a>
+            <br/> Linux
         </td>
-      <td align="center" width="90">
-      <img src="https://skillicons.dev/icons?i=html" width="45" height="45"/>
-      <br/> HTML
-    </td>
-      <td align="center" width="90">
-      <img src="https://skillicons.dev/icons?i=css" width="45" height="45"/>
-      <br/> CSS
-    </td>
-</td>
-      <td align="center" width="90">
-      <img src="https://skillicons.dev/icons?i=javascript" width="45" height="45"/>
-      <br/> JS
-    </td>
-    </td>
-      <td align="center" width="90">
-      <img src="https://skillicons.dev/icons?i=redis" width="45" height="45"/>
-      <br/> Redis
-    </td>
-
-
-      
+        <td align="center" width="90">
+            <img src="https://skillicons.dev/icons?i=html" width="45" height="45"/>
+            <br/> HTML
+        </td>
+        <td align="center" width="90">
+            <img src="https://skillicons.dev/icons?i=css" width="45" height="45"/>
+            <br/> CSS
+        </td>
+        <td align="center" width="90">
+            <img src="https://skillicons.dev/icons?i=javascript" width="45" height="45"/>
+            <br/> JS
+        </td>
+        <td align="center" width="90">
+            <img src="https://skillicons.dev/icons?i=redis" width="45" height="45"/>
+            <br/> Redis
+        </td>
     </tr>
 </table>
-
 
 
 ![Static Badge](https://img.shields.io/badge/Technologies%20I'm%20Familiar%20With-lightgreen?style=flat)
