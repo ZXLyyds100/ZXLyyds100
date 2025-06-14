@@ -1,3 +1,4 @@
+
 # HELLO MY FRIEND!  
 I'm **Aliang**! This is my nickname in life. I'm a **software engineering student** at **South China Agricultural University (SCAU)** in Guangzhou, China. With a passion for software development, I'm determined to become an **excellent backend developer**.
 
@@ -58,7 +59,14 @@ I'm **Aliang**! This is my nickname in life. I'm a **software engineering studen
       <img src="https://skillicons.dev/icons?i=docker" width="45" height="45"/>
       <br/> Docker
     </td>
-    
+        <td align="center" width="90">
+            <img src="https://skillicons.dev/icons?i=html" width="45" height="45"/>
+            <br/> HTML
+        </td>
+        <td align="center" width="90">
+            <img src="https://skillicons.dev/icons?i=css" width="45" height="45"/>
+            <br/> CSS
+        </td>
   </tr>
 </table>
 
@@ -72,22 +80,11 @@ I'm **Aliang**! This is my nickname in life. I'm a **software engineering studen
             </a>
             <br/> Linux
         </td>
-        <td align="center" width="90">
-            <img src="https://skillicons.dev/icons?i=html" width="45" height="45"/>
-            <br/> HTML
-        </td>
-        <td align="center" width="90">
-            <img src="https://skillicons.dev/icons?i=css" width="45" height="45"/>
-            <br/> CSS
-        </td>
-        <td align="center" width="90">
-            <img src="https://skillicons.dev/icons?i=javascript" width="45" height="45"/>
-            <br/> JS
-        </td>
-        <td align="center" width="90">
-            <img src="https://skillicons.dev/icons?i=redis" width="45" height="45"/>
-            <br/> Redis
-        </td>
+
+<td align="center" width="90">
+  <img src="https://skillicons.dev/icons?i=javascript" alt="JavaScript" width="45" height="45" />
+  <br/>JavaScript
+</td>
     </tr>
 </table>
 
