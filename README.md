@@ -80,6 +80,12 @@ I'm **Aliang**! This is my nickname in life. I'm a **software engineering studen
             </a>
             <br/> Linux
         </td>
+           <td align="center" width="90">
+            <a href="#my-tech-stack-">
+                <img src="https://skillicons.dev/icons?i=go" alt="linux" width="45" height="45" />
+            </a>
+            <br/> GO
+        </td>
 
 <td align="center" width="90">
   <img src="https://skillicons.dev/icons?i=javascript" alt="JavaScript" width="45" height="45" />
