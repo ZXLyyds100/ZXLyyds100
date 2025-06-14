@@ -35,6 +35,19 @@ I'm **Aliang**! This is my nickname in life. I'm a **software engineering studen
       <img src="https://skillicons.dev/icons?i=spring" width="45" height="45"/>
       <br/> Spring
     </td>
+      <td align="center" width="90">
+      <img src="https://spring.io/img/projects/spring-boot.svg" width="45" height="45"/>
+      <br/> SpringBoot
+    </td>
+        </td>
+      <td align="center" width="90">
+      <img src="https://spring.io/img/projects/spring-security.svg" width="45" height="45"/>
+      <br/> SpringSecurity
+    </td>
+  <td align="center" width="90">
+      <img src="https://spring.io/img/projects/spring-cloud.svg" width="45" height="45"/>
+      <br/> SpringCloud
+    </td>
   </tr>
   <tr>
     <td align="center" width="90">
@@ -44,6 +57,10 @@ I'm **Aliang**! This is my nickname in life. I'm a **software engineering studen
       <td align="center" width="90">
       <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/65dea6c4eaca7da319e552c09f4cf5a9a8dab2c8/icons/VisualStudio-Dark.svg" width="45" height="45"/>
       <br/> Visual Studio
+    </td>
+          <td align="center" width="90">
+      <img src="https://skillicons.dev/icons?i=vscode" width="45" height="45"/>
+      <br/> VSCODE
     </td>
   </tr>
    
@@ -86,7 +103,10 @@ I'm **Aliang**! This is my nickname in life. I'm a **software engineering studen
             </a>
             <br/> GO
         </td>
-
+<td align="center" width="90">
+  <img src="https://skillicons.dev/icons?i=vue" alt="JavaScript" width="45" height="45" />
+  <br/>VUE
+</td>
 <td align="center" width="90">
   <img src="https://skillicons.dev/icons?i=javascript" alt="JavaScript" width="45" height="45" />
   <br/>JavaScript
