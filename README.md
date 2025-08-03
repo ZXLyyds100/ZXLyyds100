@@ -62,6 +62,18 @@ I'm **Aliang**! This is my nickname in life. I'm a **software engineering studen
       <img src="https://skillicons.dev/icons?i=vscode" width="45" height="45"/>
       <br/> VSCODE
     </td>
+     <td align="center" width="90">
+            <a href="#my-tech-stack-">
+                <img src="https://skillicons.dev/icons?i=maven" alt="maven" width="45" height="45" />
+            </a>
+            <br/> maven
+        </td>
+     <td align="center" width="90">
+            <a href="#my-tech-stack-">
+                <img src="https://skillicons.dev/icons?i=git" alt="git" width="45" height="45" />
+            </a>
+            <br/> Git
+        </td>
   </tr>
    
 </table>
@@ -84,6 +96,12 @@ I'm **Aliang**! This is my nickname in life. I'm a **software engineering studen
             <img src="https://skillicons.dev/icons?i=css" width="45" height="45"/>
             <br/> CSS
         </td>
+        <td align="center" width="90">
+            <a href="#my-tech-stack-">
+                <img src="https://skillicons.dev/icons?i=go" alt="python" width="45" height="45" />
+            </a>
+            <br/> GO
+        </td>
   </tr>
 </table>
 
@@ -97,12 +115,7 @@ I'm **Aliang**! This is my nickname in life. I'm a **software engineering studen
             </a>
             <br/> Linux
         </td>
-           <td align="center" width="90">
-            <a href="#my-tech-stack-">
-                <img src="https://skillicons.dev/icons?i=go" alt="linux" width="45" height="45" />
-            </a>
-            <br/> GO
-        </td>
+       
 <td align="center" width="90">
   <img src="https://skillicons.dev/icons?i=vue" alt="JavaScript" width="45" height="45" />
   <br/>VUE
@@ -111,6 +124,12 @@ I'm **Aliang**! This is my nickname in life. I'm a **software engineering studen
   <img src="https://skillicons.dev/icons?i=javascript" alt="JavaScript" width="45" height="45" />
   <br/>JavaScript
 </td>
+ <td align="center" width="90">
+            <a href="#my-tech-stack-">
+                <img src="https://skillicons.dev/icons?i=python" alt="python" width="45" height="45" />
+            </a>
+            <br/> Python
+        </td>
     </tr>
 </table>
 
