@@ -130,6 +130,12 @@ I'm **Aliang**! This is my nickname in life. I'm a **software engineering studen
             </a>
             <br/> Python
         </td>
+         <td align="center" width="90">
+            <a href="#my-tech-stack-">
+                <img src="https://skillicons.dev/icons?i=graphql" alt="graphql" width="45" height="45" />
+            </a>
+            <br/> graphql
+        </td>
     </tr>
 </table>
 
