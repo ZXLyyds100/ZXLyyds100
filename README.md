@@ -102,6 +102,12 @@ I'm **Aliang**! This is my nickname in life. I'm a **software engineering studen
             </a>
             <br/> GO
         </td>
+      <td align="center" width="90">
+            <a href="#my-tech-stack-">
+                <img src="https://docs.langchain4j.info/img/logo.svg" alt="python" width="45" height="45" />
+            </a>
+            <br/> LangChain4j
+        </td>
   </tr>
 </table>
 
