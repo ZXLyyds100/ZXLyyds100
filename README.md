@@ -23,9 +23,9 @@
 </picture>
 
 <p align="center">
-  <a href="#toolbox"><img src="./assets/lab/nav-toolbox.png" width="100" alt="拆开我的技术工具盒"></a>
-  <a href="#journey"><img src="./assets/lab/nav-journey.png" width="100" alt="查看实习车票"></a>
-  <a href="#writing"><img src="./assets/lab/nav-writing.png" width="100" alt="前往我的博客热门精选"></a>
+  <a href="#user-content-toolbox"><img src="./assets/lab/nav-toolbox.png" width="100" alt="拆开我的技术工具盒"></a>
+  <a href="#user-content-journey"><img src="./assets/lab/nav-journey.png" width="100" alt="查看实习车票"></a>
+  <a href="#user-content-writing"><img src="./assets/lab/nav-writing.png" width="100" alt="前往我的博客热门精选"></a>
 </p>
 
 <br>
