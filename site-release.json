@@ -1,0 +1,25 @@
+{
+  "release": "signal-lab-20261012-fe94183fbac6",
+  "generatedAt": "2026-10-11T16:42:05.774Z",
+  "htmlSha256": "1722525465dca9f29e14efab295bf5b6c93a7c85350b8c3e9ed9eff9a34b15de",
+  "blogMode": "static-profile-overview",
+  "csdnLiveEnabled": false,
+  "overviewSourceAt": "2026-10-11T01:15:04+08:00",
+  "assets": {
+    "assets/fonts/OFL.txt": "057e5d1992cd535075e95084c4b18061ea01d9524c7e95aa7668e92db6b8b5eb",
+    "assets/fonts/instrument-serif-italic-latin.woff2": "6ee678c33f388dd7ba59700ebea635deb98821baafd817b09891f7927177f702",
+    "assets/fonts/instrument-serif-latin.woff2": "60c06664b5a95c7de6cc3e00d1f9034d78bd1e40b564016b241674449a067d4d",
+    "assets/fonts/manrope-latin.woff2": "e310b55a7fd9677f5e3555e6c6c4d064fa1f1d24393f0ddbe217cea12a8c432f",
+    "assets/lab/csdn-avatar.SOURCE.md": "acfbec26a03a72b08080bc0fa83bb9a1f0bc4101d98953498c6d2fd68457f61f",
+    "assets/lab/csdn-avatar.webp": "d666419bc6062f25ef3e1dd3600e5a1b7b682e5f383632ed4c234d4f6c78c71b",
+    "assets/lab/lang-go.webp": "2ff5a95103b32f974030cefb36e42a26c3651b4cb27ea7aa0edc4b2734953e54",
+    "assets/lab/lang-java.webp": "07e89a3d02db200a5d7646c8d865b2c1bb5eb7ecfeddc9f39a91a13f4a2b1aeb",
+    "assets/lab/lang-python.webp": "e0191640f2b5259e5e72b191284850bba087f34ae1b2c866ce5685073d02c6ec",
+    "assets/lab/portrait.webp": "4b69990ef62e4c9dc8ca6a51e87a55d8b2c1345f00ba58c8876178f8a39580b0",
+    "assets/lab/skill-icons.LICENSE.txt": "1f3fe9a65dfd7ad37397d767363c3e1ef36e7b2e158d69e38089571066970cf1",
+    "assets/lab/ticket-bilibili-mobile.png": "3cd26d0cfa6867e0c2eef517d2330b92cbadd8ab7776b6639593f8af85dd0895",
+    "assets/lab/ticket-bilibili.png": "103c4f11c2d404a807e28b975d0472a60ffb44319a866a40d1c203bfaad7e7d8",
+    "assets/lab/ticket-oneway-mobile.png": "d42565fc3d53fb780815169cb349345b75a238ac0ab7de9b3aa57124697f5a86",
+    "assets/lab/ticket-oneway.png": "57175c5e77bc5dfa7e8fabf5c4c877df04a576608ab4fb166f64893273665696"
+  }
+}
