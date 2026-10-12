@@ -8,7 +8,7 @@
   <link rel="preload" as="font" type="font/woff2" href="./assets/fonts/manrope-latin.woff2?v=e310b55a7fd9" crossorigin>
   <link rel="preload" as="font" type="font/woff2" href="./assets/fonts/instrument-serif-italic-latin.woff2?v=6ee678c33f38" crossorigin>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='12' fill='%23f8dbe9'/%3E%3Ctext x='20' y='30' font-size='30' text-anchor='middle' fill='%23bc4078'%3E✳%3C/text%3E%3C/svg%3E">
-  <meta name="signal-lab-release" content="signal-lab-20261012-fe94183fbac6">
+  <meta name="signal-lab-release" content="signal-lab-20261012-482a63bddc33">
   <title>Aliang · Signal Lab</title>
   <style>@font-face{font-family:Manrope;src:url("./assets/fonts/manrope-latin.woff2?v=e310b55a7fd9") format("woff2");font-weight:200 800;font-display:swap}
 @font-face{font-family:"Instrument Serif";src:url("./assets/fonts/instrument-serif-latin.woff2?v=60c06664b5a9") format("woff2");font-weight:400;font-display:swap}
@@ -59,7 +59,7 @@ html[data-theme="dark"] .page-scene-fallback{opacity:.25}
 .primary-nav a:hover,.primary-nav a.is-active{color:var(--ink)}
 .primary-nav a.is-active::after{transform:scale(1)}
 .header-actions{display:flex;align-items:center;gap:8px}
-.icon-button{width:36px;height:36px;display:grid;place-items:center;border:1px solid var(--line);border-radius:50%;background:var(--surface);transition:background .25s,transform .35s var(--ease)}
+.icon-button{width:44px;height:44px;display:grid;place-items:center;border:1px solid var(--line);border-radius:50%;background:var(--surface);transition:background .25s,transform .35s var(--ease)}
 .icon-button:hover{background:var(--rose);transform:rotate(-8deg)}
 .motion-icon{font:15px var(--mono)}
 .header-contact{padding:9px 19px;margin-left:8px;border:1px solid var(--line);border-radius:30px;font-size:12px}
@@ -161,6 +161,59 @@ h2{font-size:clamp(32px,3.5vw,50px);font-weight:500;letter-spacing:-1.8px;line-h
 .scroll-word{color:var(--ink);opacity:var(--word-alpha,1);transition:opacity .2s linear}
 .about-facts{display:flex;flex-wrap:wrap;gap:8px;margin-top:27px}
 .about-facts span{padding:5px 12px;border:1px solid var(--line);border-radius:30px;font-size:10px;color:var(--muted)}
+.about-layout:has(.companion-studio){grid-template-columns:1fr 1.05fr;gap:96px}
+.companion-studio{margin:0;min-width:0;width:100%;max-width:485px;position:relative;border:1px solid var(--line);border-radius:25px;background:var(--paper);padding:14px;box-shadow:0 22px 60px #72405d0b;isolation:isolate}
+.companion-studio::before{content:"";position:absolute;inset:16px -13px -13px 16px;border:1px solid var(--accent);border-radius:25px;opacity:.18;z-index:-1;pointer-events:none}
+.companion-topline{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 8px 17px;font:8px/1.7 var(--mono);letter-spacing:.7px;color:var(--muted)}
+.companion-topline>span:first-child{display:flex;align-items:center}.companion-topline .status-dot{width:4px;height:4px;margin-right:8px}
+.companion-topline>span:last-child{font-size:7px;letter-spacing:.3px;opacity:.75}
+.companion-screen{position:relative;width:100%;aspect-ratio:9/10;background:#f6dce3;border-radius:15px;overflow:hidden;isolation:isolate;touch-action:pan-y;user-select:none}
+.companion-screen::after{content:"";position:absolute;inset:0;border:1px solid #774c6410;border-radius:inherit;pointer-events:none;z-index:6}
+.companion-screen::before{content:"";position:absolute;inset:0;z-index:3;pointer-events:none;background:linear-gradient(to bottom,#f6dce3 0%,#f6dce300 13%,#f6dce300 81%,#f6dce3 100%)}
+.companion-poster,.companion-screen video,.companion-canvas{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block}
+.companion-poster{opacity:1;transition:opacity .18s ease}
+.companion-screen video{opacity:0;pointer-events:none;z-index:0}
+.companion-canvas{opacity:0;z-index:2;pointer-events:none}
+.companion-studio.is-ready .companion-canvas{opacity:1}
+.companion-studio.is-native .companion-canvas{display:none}
+.companion-studio.is-native video{transition:opacity .2s ease;z-index:1}
+.companion-studio.is-native video.is-active{opacity:1;z-index:2}
+.companion-studio.is-ready .companion-poster{opacity:0}
+.companion-hotspot{position:absolute;z-index:4;background:transparent;border:1px solid transparent;padding:0;border-radius:50%;cursor:pointer;-webkit-user-select:none}
+.companion-head{left:24%;top:8%;width:52%;height:22%;clip-path:ellipse(50% 50% at 50% 50%)}
+.companion-cheek{left:34%;top:34%;width:34%;height:20%;clip-path:ellipse(50% 50% at 50% 50%)}
+.companion-hotspot>span{display:none}
+.companion-hotspot:focus-visible{outline:2px dashed #b85187;outline-offset:-5px;background:#fff8fb20}
+.companion-caption{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:17px 8px 13px}
+.companion-caption h3{font:italic 32px/1.2 var(--serif);color:var(--accent);letter-spacing:-.3px}
+.companion-status{display:block;font-size:12px;line-height:1.8;color:var(--muted);margin-top:6px;min-height:44px;max-width:350px}
+.companion-state-dot{width:7px;height:7px;border-radius:50%;background:#819c83;box-shadow:0 0 0 5px #819c830e;flex-shrink:0;transition:background .3s,box-shadow .3s}
+.companion-studio:not([data-state="idle"]) .companion-state-dot{background:var(--accent);box-shadow:0 0 0 6px #bc3d7312}
+.companion-controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;padding:0 7px}
+.companion-controls button{display:flex;align-items:center;justify-content:center;gap:7px;min-height:46px;padding:10px 8px;border:1px solid var(--line);border-radius:13px;font-size:11px;background:var(--surface);white-space:nowrap;transition:background .25s,border-color .25s,translate .3s var(--ease)}
+.companion-controls button>svg{height:17px;width:17px;stroke-width:1.3;color:var(--accent)}
+.companion-controls button:hover{background:var(--rose);border-color:var(--accent);translate:0 -2px}
+.companion-studio[data-state="hello"] [data-companion-action="hello"],.companion-studio:is([data-state="pat"],[data-state="cuddle"]) [data-companion-action="pat"],.companion-studio:is([data-state="poke"],[data-state="pout"]) [data-companion-action="poke"]{background:var(--rose);border-color:var(--accent)}
+.companion-instructions{font-size:11px;line-height:1.9;color:var(--muted);padding:12px 8px 4px}
+.companion-play{position:absolute;z-index:7;bottom:24px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:12px;min-height:46px;white-space:nowrap;padding:10px 20px;background:var(--ink);color:var(--bg);border-radius:30px;font-size:12px;box-shadow:0 8px 24px #35263025}
+.companion-touch{position:absolute;left:0;top:0;z-index:5;pointer-events:none;opacity:0;transform:translate(var(--touch-x,-100px),var(--touch-y,-100px));transition:opacity .2s}
+.companion-touch>i{position:absolute;left:-17px;top:-17px;width:34px;height:34px;border:1px solid #b55b8580;border-radius:50%;box-shadow:0 0 0 5px #fff7fb30}
+.companion-touch>span{display:none}
+.companion-screen.has-pointer .companion-touch{opacity:.8}
+body:has(.companion-screen.has-pointer) .cursor-ring{opacity:0}
+.companion-effects{position:absolute;inset:0;z-index:5;pointer-events:none;overflow:hidden}
+.companion-mote{position:absolute;color:#ad477c;font:24px var(--serif);line-height:1;opacity:0;animation:companion-affection .85s ease-out var(--mote-delay,0ms) forwards;text-shadow:0 2px 8px #fff9}
+.companion-note{display:flex;align-items:center;gap:16px;margin-top:34px;padding-top:25px;border-top:1px solid var(--line);max-width:455px;font-size:12px;color:var(--muted)}
+.companion-note .small-star{font-size:30px;flex-shrink:0}.companion-note small{display:block;font-size:10px;margin-top:5px}.companion-note>span:last-child{margin-left:auto;font-size:24px;color:var(--accent)}
+html[data-theme="dark"] .companion-studio{box-shadow:0 24px 65px #0002}
+html[data-motion="reduced"] .companion-touch,html[data-motion="reduced"] .companion-mote{display:none}
+@keyframes companion-affection{0%{opacity:0;transform:translate(-50%,0) scale(.65)}20%{opacity:.85}100%{opacity:0;transform:translate(calc(-50% + var(--mote-x)), -75px) scale(1.1)}}
+@media(max-width:1150px){.about-layout:has(.companion-studio){gap:55px}}
+@media(max-width:900px){.about-layout:has(.companion-studio){gap:32px;grid-template-columns:1.05fr 1fr}.companion-topline{font-size:7px}.companion-topline>span:last-child{font-size:6px}}
+@media(max-width:700px){.about-layout:has(.companion-studio){grid-template-columns:1fr;gap:49px}.companion-studio{max-width:450px;margin-inline:auto}.about-layout:has(.companion-studio) .about-copy{max-width:560px;margin-inline:auto}.companion-topline{font-size:8px}.companion-topline>span:last-child{font-size:7px}}
+@media(max-width:600px){.companion-studio{padding:11px;border-radius:21px}.companion-studio::before{inset:10px -8px -8px 10px;border-radius:21px}.companion-screen{border-radius:12px}.companion-topline{padding:8px 5px 14px;font-size:8px;letter-spacing:.5px}.companion-topline>span:last-child{font-size:7px}.companion-caption{padding-inline:5px}.companion-caption h3{font-size:30px}.companion-controls{padding-inline:4px}.companion-instructions{padding-inline:5px;font-size:11px}.companion-note{margin-top:27px}}
+@container(max-width:440px){.about-layout:has(.companion-studio){grid-template-columns:1fr;gap:43px}.companion-studio{padding:11px}.companion-topline{font-size:7px;letter-spacing:.5px}.companion-topline>span:last-child{font-size:6px}.companion-caption h3{font-size:29px}}
+@media(pointer:coarse){.companion-touch,.companion-hotspot>span{display:none}.companion-controls button:hover{translate:0 0}}
 .toolbox-section{padding-block:92px 36px;border-block:1px solid var(--line);background:var(--surface)}
 .toolbox-layout{display:grid;grid-template-columns:1.3fr .85fr;gap:68px;align-items:center}
 .skill-orbit{min-width:0;height:570px;position:relative;overflow:hidden;border:1px solid var(--line);border-radius:18px;background:var(--surface);isolation:isolate}
@@ -447,6 +500,7 @@ html[data-theme="dark"] .contact-section{background:#402737b3}.contact-section .
 @media(max-width:600px){
   html{scroll-padding-top:92px}.page-wrap{width:calc(100% - 40px)}.site-header{height:72px;padding-inline:20px;gap:10px}.wordmark{gap:8px}.brand-star{width:22px;height:22px}.wordmark>span:first-of-type{font-size:23px}.primary-nav{gap:17px;margin-left:auto}.primary-nav a{font-size:10px}.primary-nav a[data-nav="journey"],.primary-nav a[data-nav="csdn"]{display:none}.header-actions{gap:6px}.icon-button{width:32px;height:32px}#width-toggle{display:none}.hero{padding-top:111px}.hero h1{font-size:clamp(90px,25.5vw,140px);letter-spacing:-6px}.hero-line:nth-child(2){font-size:.46em;letter-spacing:-1.5px}.hero-line em{letter-spacing:-1.3px}.hero-manifesto{font-size:23px;margin-top:19px}.hero-description{font-size:12px}.hero-visual{height:430px}.visual-topline{inset-inline:16px;font-size:6px}#renderer-status{font-size:6px}.tag-one{top:116px;left:0;font-size:7px}.tag-two{top:274px;right:0;font-size:7px}.visual-bottomline{inset-inline:16px;bottom:16px;padding-top:14px}.visual-caption em{font-size:25px}.mode-switch{gap:2px;padding:3px}.mode-switch button{width:30px;height:30px;font-size:8px}.field-wave{left:20px;bottom:98px;width:73px}.stage-coordinate{right:18px;bottom:102px;font-size:6px}.cross-top{top:67px;right:19px}.cross-bottom{display:none}.hero-footer{font-size:6px;margin-top:5px}.hero-footer>a{gap:9px;font-size:6px}.hero-footer>span:nth-child(2){font-size:5px;letter-spacing:.2px}.marquee-band{padding-block:13px}.marquee-track>div{gap:30px;padding-right:30px;font-size:17px}.marquee-track .serif{font-size:28px}.marquee-track i{font-size:21px}.about-section{padding-block:65px 75px}.section-label{font-size:7px;letter-spacing:.6px;padding-bottom:17px;margin-bottom:30px}.section-label>span:last-child{font-size:6px;letter-spacing:.3px}.about-layout{grid-template-columns:1fr;gap:43px}.about-portrait{width:70%;max-width:270px}.portrait-sticker{font-size:23px;right:-25px}.portrait-caption{font-size:6px}.about-copy h2,h2{font-size:32px;letter-spacing:-1.3px}.about-copy h2{margin-bottom:18px}.scroll-sentence{font-size:15px;line-height:2.1}.about-facts{margin-top:22px}.about-facts span{font-size:9px}.toolbox-section{padding-block:66px 29px}.section-heading{flex-direction:column;align-items:flex-start;gap:18px;margin-bottom:30px}.section-description{padding-bottom:0;font-size:11px}.skill-orbit{height:520px;border-radius:12px}.network-topline{top:19px;inset-inline:15px;font-size:6px;letter-spacing:.3px}.network-status{font-size:5px;letter-spacing:0;gap:4px}.language-modules{top:52px;inset-inline:12px;gap:8px}.language-module{min-height:100px;padding:10px 8px 11px;border-radius:6px}.module-kicker{font-size:5px;letter-spacing:0}.module-name{gap:6px;margin-top:10px}.module-name>strong{font-size:19px;letter-spacing:-.5px}.language-emblem{height:23px;width:23px}.language-emblem>img{border-radius:5px}.module-detail{font-size:6px;margin-top:9px;line-height:1.7}.agent-core{width:236px;min-height:147px;padding:19px 15px 15px}.core-title{font-size:17px}.core-title em{font-size:23px}.core-label{font-size:6px;letter-spacing:.5px}.core-frameworks{font-size:7px}.core-flow{margin-top:14px}.core-flow b{font-size:5px}.core-reactor{width:50px;height:50px;top:-34px;right:6px}.core-reactor b{font-size:20px}.core-reactor i:nth-child(2){inset:7px}.core-reactor i:nth-child(3){inset:13px}.concept-chip{font-size:7px;padding:6px 9px}.chip-context{top:37%;left:5%}.chip-rag{top:37%;left:49%}.chip-mcp{top:37%;right:5%}.chip-memory{top:77%;left:5%}.chip-tools{top:77%;left:37%;right:auto}.chip-evals{top:77%;right:5%}.web-foundation{bottom:15px;inset-inline:12px;padding:10px 12px}.web-foundation>span:first-child{font-size:5px}.web-foundation>strong{font-size:10px}.web-foundation i{margin-inline:3px}.web-foundation>span:last-child{font-size:19px}.skill-panel{min-height:293px}.skill-panel h3{font-size:26px}.skill-panel p{font-size:11px}.skill-row{grid-template-columns:74px 1fr;padding-block:12px}.skill-row span{font-size:9px}.skill-tabs{gap:27px}.infrastructure{flex-direction:column;align-items:flex-start;gap:14px;margin-top:29px;padding-top:21px}.infrastructure>div{gap:12px 17px}.infra-token{font-size:9px}.infra-token svg{width:16px;height:16px}.signal-interlude{padding-block:39px 29px}.flow-node{padding:19px 16px}.flow-node>strong{font-size:26px}.flow-node-note{font-size:8px}.flow-index{font-size:6px}.signal-flow{gap:12px}.flow-status{font-size:8px;margin-top:16px}.writing-section{padding-block:66px 76px}.notes-grid{grid-template-columns:1fr;gap:23px}.note-card{padding:10px;border-radius:12px}.note-cover{height:232px}.note-cover>strong{font-size:50px;left:20px;top:58px}.note-cover-label{font-size:7px;left:20px;top:20px}.note-cover-number{font-size:7px;left:20px;bottom:18px}.note-symbol{height:178px;width:190px;right:6px;top:38px;max-width:53%}.note-info{padding:20px 11px 13px}.note-info h3{font-size:17px;min-height:0}.note-meta{font-size:8px}.note-summary{font-size:11px;margin-top:11px}.journey-section{padding-block:0 72px}.journey-intro>p{font-size:11px;margin-top:19px}.journey-layout{gap:31px}.ticket-stack{margin-left:14px;width:calc(100% - 14px)}.timeline-line{left:-17px}.timeline-dot{left:-21px}.journey-pass{margin-bottom:32px}.ticket-seal{font-size:5px;right:4%;top:7%}.pass-caption{margin:12px 8px 0;font-size:8px}.pass-caption>span:first-child{font-size:6px}.csdn-section{padding-block:64px 29px}.snapshot-meta{font-size:8px}.dashboard-grid{gap:15px}.views-card{padding:22px 23px 18px;border-radius:12px}.total-views{font-size:68px;letter-spacing:-3px;margin-top:21px}.views-bottom{font-size:9px}.views-bottom>span:last-child{font-size:7px}.reach-chart{height:93px;margin-top:18px}.chart-caption{font-size:7px}.metrics-grid{gap:9px}.metric-card{min-height:100px;padding:13px 11px 12px;border-radius:8px;gap:12px}.metric-card>span{font-size:6px;letter-spacing:0}.metric-card>strong{font-size:24px}.metric-card .force-value{font-size:20px}.metric-card .force-value small{font-size:9px}.snapshot-footer{gap:15px;align-items:flex-start;margin-top:23px;font-size:8px}.snapshot-status{max-width:225px;line-height:1.9}.snapshot-footer>.text-link{font-size:7px;white-space:nowrap}.experiments-section{padding-block:65px 72px}.experiments-section h2{font-size:31px}.projects-grid{grid-template-columns:1fr;gap:18px}.project-card{padding:23px}.project-card h3{font-size:26px}.project-art{width:130px;margin-top:34px}.project-card p{padding-top:11px;font-size:10px}.contact-section{padding-block:44px 22px}.contact-top .eyebrow{font-size:6px;letter-spacing:.6px;max-width:92%}.contact-headline{font-size:clamp(42px,11.8vw,64px);letter-spacing:-2.5px;margin-top:27px;padding-right:20px}.contact-headline>em{font-size:1.08em;letter-spacing:-1.1px}.contact-arrow{font-size:40px;top:1%;right:0}.contact-links{gap:26px;margin-top:29px}.contact-links a{font-size:11px}.contact-links>span{font-size:9px}.contact-orbit{width:260px;height:260px;right:-90px;top:10%}.contact-orbit>span{font-size:35px}.footer-bottom{margin-top:37px;padding-top:19px;font-size:6px;letter-spacing:.3px;gap:10px}
 }
+@media(max-width:600px){.header-actions .icon-button{width:44px;height:44px}}
 @media(max-width:365px){
   .page-wrap{width:calc(100% - 32px)}.site-header{padding-inline:16px}.primary-nav{gap:13px}.primary-nav a[data-nav="toolbox"]{display:none}.wordmark{gap:7px}.hero h1{font-size:88px;letter-spacing:-5px}.hero-manifesto{font-size:21px}.hero-disciplines{gap:8px;font-size:9px}.rotating-discipline{font-size:7px}.hero-greeting span{font-size:17px;margin-left:5px}.hero-visual{height:385px}.tag-one{top:100px;font-size:6px}.tag-two{top:245px;font-size:6px}.visual-caption em{font-size:23px}.visual-bottomline{inset-inline:12px}.interaction-hint{font-size:7px}.mode-switch button{height:27px;width:27px;font-size:7px}.hero-now{font-size:8px}.hero-actions{gap:22px}.hero-note-link{font-size:10px}.button{font-size:11px;padding-inline:20px}.language-modules{gap:6px;inset-inline:9px}.language-module{padding-inline:6px}.module-name{gap:4px}.module-name>strong{font-size:17px}.language-emblem{height:20px;width:20px}.module-detail{font-size:6px}.agent-core{width:220px}.core-title{font-size:16px}.core-title em{font-size:21px}.core-frameworks{font-size:6px}.concept-chip{font-size:6px;padding-inline:7px}.chip-tools{left:36%}.flow-node{padding-inline:12px}.flow-node>strong{font-size:22px}.flow-node-note{font-size:7px}.flow-node>strong>span{font-size:16px}.note-cover>strong{font-size:44px}.note-symbol{max-width:51%;right:0}.note-meta{font-size:7px}.metric-card>strong{font-size:22px}.metric-card .force-value{font-size:18px}.metric-card .force-value small{font-size:8px}.snapshot-status{max-width:185px}.project-art{width:112px}.project-card h3{font-size:24px}
 }
@@ -576,16 +630,39 @@ html[data-suspended="true"] *,html[data-suspended="true"] *::before,html[data-su
     <section class="about-section page-wrap" id="about" aria-labelledby="about-title">
       <div class="section-label reveal"><span>01 / THE HUMAN</span><span>CODE + CURIOSITY</span></div>
       <div class="about-layout">
-        <div class="about-portrait reveal" data-tilt>
-          <div class="portrait-outline" aria-hidden="true"></div>
-          <img src="./assets/lab/portrait.webp?v=4b69990ef62e" width="600" height="540" alt="阿亮的程序员角色原画，抱着笔记本电脑，佩戴代码发夹。" loading="lazy">
-          <span class="portrait-sticker">hello, world<span>↗</span></span>
-          <div class="portrait-caption"><span>THE HUMAN BEHIND THE CODE</span><span>♡</span></div>
-        </div>
+        <figure class="companion-studio reveal" id="companion" data-state="idle" aria-labelledby="companion-title">
+          <div class="companion-topline"><span><i class="status-dot"></i> A LITTLE COMPANY</span><span>INTERACTIVE / 01</span></div>
+          <div class="companion-screen" id="companion-screen" aria-describedby="companion-instructions">
+            <img class="companion-poster" src="./assets/companion-v2/poster.png?v=2e7a7c245faf" width="720" height="800" alt="粉色长发的二维角色，佩戴代码发夹，微笑等待你的互动。" loading="lazy">
+            <video data-companion-video="idle" src="./assets/companion-v2/idle.mp4?v=c5b73cf07c36" poster="./assets/companion-v2/poster.png?v=2e7a7c245faf" width="720" height="800" muted playsinline loop preload="none" aria-hidden="true" tabindex="-1"></video>
+            <video data-companion-video="hello" src="./assets/companion-v2/hello.mp4?v=84345ecf385b" width="720" height="800" muted playsinline preload="none" aria-hidden="true" tabindex="-1"></video>
+            <video data-companion-video="pat" src="./assets/companion-v2/pat.mp4?v=b67b2c0e6218" width="720" height="800" muted playsinline preload="none" aria-hidden="true" tabindex="-1"></video>
+            <video data-companion-video="cuddle" src="./assets/companion-v2/cuddle.mp4?v=7ea02f9bad0c" width="720" height="800" muted playsinline preload="none" aria-hidden="true" tabindex="-1"></video>
+            <video data-companion-video="poke" src="./assets/companion-v2/poke.mp4?v=1a7edefece2b" width="720" height="800" muted playsinline preload="none" aria-hidden="true" tabindex="-1"></video>
+            <video data-companion-video="pout" src="./assets/companion-v2/pout.mp4?v=430db65f4e66" width="720" height="800" muted playsinline preload="none" aria-hidden="true" tabindex="-1"></video>
+            <canvas class="companion-canvas" width="720" height="800" aria-hidden="true"></canvas>
+            <button class="companion-hotspot companion-head" type="button" data-companion-hit="pat" aria-label="轻轻摸摸角色的头"><span>摸摸头</span></button>
+            <button class="companion-hotspot companion-cheek" type="button" data-companion-hit="poke" aria-label="轻轻戳一下角色的脸颊"><span>戳戳脸</span></button>
+            <div class="companion-effects" aria-hidden="true"></div>
+            <div class="companion-touch" aria-hidden="true"><i></i><span>HELLO, YOU.</span></div>
+            <button class="companion-play" type="button" hidden>点击播放小像 <span aria-hidden="true">▷</span></button>
+          </div>
+          <figcaption class="companion-caption">
+            <div><h3 id="companion-title">a little company.</h3><span class="companion-status" id="companion-status" role="status" aria-live="polite">在这里，等一个温柔的招呼。</span></div>
+            <span class="companion-state-dot" aria-hidden="true"></span>
+          </figcaption>
+          <div class="companion-controls" aria-label="角色互动">
+            <button type="button" data-companion-action="hello"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 13-2-6a1.5 1.5 0 0 1 3-1l2 6-1-8a1.5 1.5 0 0 1 3 0l1 8 1-6a1.5 1.5 0 0 1 3 1l-1 7 2-2a1.5 1.5 0 0 1 2 2l-3 5a6 6 0 0 1-9 0l-4-4a1.5 1.5 0 0 1 2-2l2 2"/><path d="m3 3-1-1m18 5 2-1"/></svg><span>打招呼</span></button>
+            <button type="button" data-companion-action="pat"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 12V7a2 2 0 0 1 4 0v4m0 0V5a2 2 0 0 1 4 0v7m0-1a2 2 0 0 1 4 0v5a5 5 0 0 1-5 5h-3a6 6 0 0 1-5-3l-3-4a2 2 0 0 1 3-2l1 1"/></svg><span>摸摸头</span></button>
+            <button type="button" data-companion-action="poke"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 12V4a2 2 0 0 1 4 0v8l4 2v3a4 4 0 0 1-4 4h-3a4 4 0 0 1-3-2l-4-5a2 2 0 0 1 3-2l3 3"/><path d="m5 4-2-1m3 5H3m15-5 2-1"/></svg><span>戳戳脸</span></button>
+          </div>
+          <p class="companion-instructions" id="companion-instructions">轻摸会微笑，长按更开心 · 点脸颊会惊讶，连点会嘟嘴。</p>
+        </figure>
         <div class="about-copy">
           <h2 class="reveal" id="about-title">代码之外，<br>始终保持<em>好奇。</em></h2>
-          <p class="scroll-sentence" data-scroll-words>我是阿亮，华南农业大学软件工程专业的学生。以 Java、Go、Python 为工具，探索后端服务与 Agent 的连接，也保留 HTML、CSS、JavaScript、Vue 的前端实践。</p>
-          <div class="about-facts reveal"><span>后端开发</span><span>Agent / AI</span><span>羽毛球 & 好问题</span></div>
+          <p class="scroll-sentence reveal">嗨，我是阿亮！SCAU 软件工程在读，主攻后端与 Agent，也熟悉前端技术栈。正在努力实习中～ 一边写代码，一边涨经验，持续升级，也继续折腾有意思的新东西。</p>
+          <div class="about-facts reveal"><span>后端开发</span><span>Agent / AI</span><span>实习升级中 ↗</span><span>羽毛球 & 好问题</span></div>
+          <a class="companion-note reveal" href="#companion"><span class="small-star" aria-hidden="true">✳</span><span>代码有逻辑，交互也可以有温度。<small>试着摸摸头，和她打个招呼。</small></span><span aria-hidden="true">↙</span></a>
         </div>
       </div>
     </section>
@@ -743,7 +820,7 @@ html[data-suspended="true"] *,html[data-suspended="true"] *::before,html[data-su
     </footer>
   </main>
   <div class="cursor-ring" aria-hidden="true"></div>
-  <noscript><style>.reveal,.hero-enter,.hero-line>span{opacity:1!important;transform:none!important;filter:none!important}</style><p class="noscript-note">当前浏览器未启用脚本，博客名片、内容与链接仍可阅读；动态装置与交互暂不可用。</p></noscript>
+  <noscript><style>.reveal,.hero-enter,.hero-line>span{opacity:1!important;transform:none!important;filter:none!important}.companion-hotspot,.companion-controls,.companion-instructions{display:none!important}</style><p class="noscript-note">当前浏览器未启用脚本，博客名片、内容与链接仍可阅读；动态装置与交互暂不可用。</p></noscript>
   <script>(() => {
   "use strict";
   const root = document.documentElement;
@@ -759,6 +836,7 @@ html[data-suspended="true"] *,html[data-suspended="true"] *::before,html[data-su
   const coarseQuery = matchMedia("(pointer: coarse)");
   const darkQuery = matchMedia("(prefers-color-scheme: dark)");
   let userPaused = preferences.get("motion") === "reduced";
+  let systemReduced = reducedQuery.matches;
   let scene;
   let ambient;
   let backdrop;
@@ -768,7 +846,7 @@ html[data-suspended="true"] *,html[data-suspended="true"] *::before,html[data-su
   let previousFrame = 0;
   const springItems = new Set();
   const motionSubscribers = new Set();
-  const isReducedMotion = () => userPaused || reducedQuery.matches;
+  const isReducedMotion = () => userPaused || systemReduced;
 
   function scheduleFrame() {
     if (!frameRequest && !isReducedMotion() && !document.hidden) frameRequest = requestAnimationFrame(tick);
@@ -821,9 +899,9 @@ html[data-suspended="true"] *,html[data-suspended="true"] *::before,html[data-su
     root.dataset.motion = isReducedMotion() ? "reduced" : "full";
     const button = $("#motion-toggle");
     button.setAttribute("aria-pressed", String(isReducedMotion()));
-    button.setAttribute("aria-label", reducedQuery.matches ? "系统已减少动效" : userPaused ? "恢复动效" : "暂停动效");
+    button.setAttribute("aria-label", systemReduced ? "系统已减少动效" : userPaused ? "恢复动效" : "暂停动效");
     button.title = button.getAttribute("aria-label");
-    button.disabled = reducedQuery.matches;
+    button.disabled = systemReduced;
     $(".motion-icon", button).textContent = isReducedMotion() ? "▷" : "Ⅱ";
     if (frameRequest) cancelAnimationFrame(frameRequest);
     frameRequest = 0;
@@ -878,7 +956,10 @@ html[data-suspended="true"] *,html[data-suspended="true"] *::before,html[data-su
     preferences.set("motion", userPaused ? "reduced" : "full");
     updateMotion();
   });
-  reducedQuery.addEventListener("change", updateMotion);
+  reducedQuery.addEventListener("change", event => {
+    systemReduced = event.matches;
+    updateMotion();
+  });
   darkQuery.addEventListener("change", event => { if (!preferences.get("theme")) setTheme(event.matches ? "dark" : "light"); });
   document.addEventListener("visibilitychange", () => {
     root.dataset.suspended = String(document.hidden);
@@ -1751,6 +1832,466 @@ html[data-suspended="true"] *,html[data-suspended="true"] *::before,html[data-su
   }
   ambient = createAmbientField();
   mountInteractionLayer();
+  function createCompanion() {
+  const studio = $("#companion");
+  if (!studio) return;
+  const screen = $("#companion-screen", studio);
+  const canvas = $(".companion-canvas", studio);
+  const context = canvas?.getContext("2d", {alpha:false});
+  const frozen = document.createElement("canvas");
+  frozen.width = 720; frozen.height = 800;
+  const frozenContext = frozen.getContext("2d", {alpha:false});
+  const status = $("#companion-status", studio);
+  const effects = $(".companion-effects", studio);
+  const touch = $(".companion-touch", studio);
+  const playButton = $(".companion-play", studio);
+  const controls = $$("[data-companion-action], [data-companion-hit]", studio);
+  const videos = Object.fromEntries($$("[data-companion-video]", studio).map(video => [video.dataset.companionVideo, video]));
+  const failed = new Set();
+  const labels = {
+    idle: "在这里，等一个温柔的招呼。",
+    hello: "嗨～ 眨一下眼，跟你打个招呼。",
+    pat: "嗯，好舒服。再轻轻摸一下吧 ♡",
+    cuddle: "还在摸呀～ 那就再开心一会儿 ♡",
+    poke: "诶？刚刚是不是戳了我一下。",
+    pout: "又被发现啦……小小嘟嘴，不许一直戳喔。",
+  };
+  let visible = false, warmed = false, active = "idle", current = null;
+  let generation = 0, pending = null, hoverTimer = 0, hoverAction = null;
+  let gesture = null, holdTimer = 0, ignoreClickUntil = 0;
+  let frameVideo = null, videoFrame = 0, frameRaf = 0, blendRaf = 0;
+  let transition = null, lastPoke = -Infinity, lastPat = -Infinity;
+  let lastGreeting = -Infinity, arrivalTimer = 0, greetingArmed = false;
+  let playbackBlocked = false;
+  const enabled = () => visible && !document.hidden && !isReducedMotion();
+  const family = state => ["pat","cuddle"].includes(state) ? "pat" : ["poke","pout"].includes(state) ? "poke" : state;
+  const familyAvailable = action => family(action) === "pat" ? !failed.has("pat") || !failed.has("cuddle")
+    : family(action) === "poke" ? !failed.has("poke") || !failed.has("pout") : !failed.has(action);
+  if (!context || !frozenContext) studio.classList.add("is-native");
+
+  function warm() {
+    if (warmed || isReducedMotion()) return;
+    warmed = true;
+    for (const video of Object.values(videos)) {
+      video.muted = true;
+      video.preload = "auto";
+      video.load();
+    }
+  }
+  function ready(video) {
+    if (video.error) return Promise.reject(new Error("Media unavailable"));
+    if (video.readyState >= 2) return Promise.resolve();
+    return new Promise((resolve, reject) => {
+      const loaded = () => { cleanup(); resolve(); };
+      const error = () => { cleanup(); reject(new Error("Media unavailable")); };
+      const timer = setTimeout(error, 8000);
+      const cleanup = () => {
+        clearTimeout(timer);
+        video.removeEventListener("loadeddata", loaded);
+        video.removeEventListener("error", error);
+      };
+      video.addEventListener("loadeddata", loaded);
+      video.addEventListener("error", error);
+    });
+  }
+  function rewind(video) {
+    if (!video.seeking && video.currentTime < 1 / 96) return Promise.resolve();
+    return new Promise((resolve, reject) => {
+      const done = () => { cleanup(); resolve(); };
+      const error = () => { cleanup(); reject(new Error("Seek unavailable")); };
+      const timer = setTimeout(error, 4000);
+      const cleanup = () => {
+        clearTimeout(timer);
+        video.removeEventListener("seeked", done);
+        video.removeEventListener("error", error);
+      };
+      video.addEventListener("seeked", done);
+      video.addEventListener("error", error);
+      video.currentTime = 0;
+    });
+  }
+  function firstFrame(video) {
+    if (!video.requestVideoFrameCallback) return Promise.resolve();
+    return new Promise(resolve => {
+      let callback = 0;
+      const done = () => {
+        clearTimeout(timer);
+        if (callback) video.cancelVideoFrameCallback?.(callback);
+        resolve();
+      };
+      const timer = setTimeout(done, 250);
+      callback = video.requestVideoFrameCallback(done);
+    });
+  }
+  function stopRenderer() {
+    if (frameVideo && videoFrame) frameVideo.cancelVideoFrameCallback?.(videoFrame);
+    if (frameRaf) cancelAnimationFrame(frameRaf);
+    if (blendRaf) cancelAnimationFrame(blendRaf);
+    frameVideo = null; videoFrame = frameRaf = blendRaf = 0;
+  }
+  function paint(now = performance.now()) {
+    if (!context || !current || current.readyState < 2) return;
+    if (transition) {
+      const fraction = clamp((now - transition.start) / transition.duration);
+      const amount = fraction * fraction * (3 - 2 * fraction);
+      context.globalAlpha = 1;
+      context.drawImage(frozen, 0, 0, 720, 800);
+      context.globalAlpha = amount;
+      context.drawImage(current, 0, 0, 720, 800);
+      context.globalAlpha = 1;
+      if (fraction >= 1) {
+        transition = null;
+        studio.dataset.transitioning = "false";
+      }
+    } else {
+      context.globalAlpha = 1;
+      context.drawImage(current, 0, 0, 720, 800);
+    }
+    studio.dataset.paintCount = String(Number(studio.dataset.paintCount || 0) + 1);
+  }
+  function startRenderer() {
+    stopRenderer();
+    if (!context || !enabled() || !current) return;
+    const video = current;
+    frameVideo = video;
+    const nextFrame = () => {
+      if (!enabled() || current !== video) return;
+      paint();
+      if (video.requestVideoFrameCallback) videoFrame = video.requestVideoFrameCallback(nextFrame);
+      else frameRaf = requestAnimationFrame(nextFrame);
+    };
+    nextFrame();
+    const blendFrame = now => {
+      blendRaf = 0;
+      if (!enabled() || !transition) return;
+      paint(now);
+      if (transition) blendRaf = requestAnimationFrame(blendFrame);
+    };
+    if (transition) blendRaf = requestAnimationFrame(blendFrame);
+  }
+  function posterFallback(message) {
+    stopRenderer();
+    transition = null;
+    current = null;
+    active = "idle";
+    studio.dataset.state = "idle";
+    studio.dataset.loading = "false";
+    studio.dataset.transitioning = "false";
+    studio.classList.remove("is-ready");
+    for (const video of Object.values(videos)) {
+      video.pause();
+      video.classList.remove("is-active");
+    }
+    status.textContent = message;
+  }
+  async function select(state) {
+    if (!enabled()) return;
+    if (failed.has(state)) {
+      if (state === "idle") posterFallback("待机视频暂时不可用，静态小像仍在这里。");
+      return;
+    }
+    warm();
+    playbackBlocked = false;
+    studio.dataset.playbackBlocked = "false";
+    if (playButton) playButton.hidden = true;
+    const token = ++generation;
+    const video = videos[state];
+    active = state;
+    studio.dataset.state = state;
+    studio.dataset.loading = "true";
+    status.textContent = labels[state];
+    try {
+      await ready(video);
+      if (token !== generation || !enabled()) return;
+      // Hold the old portrait until the next clip is seeked and decoded.
+      await rewind(video);
+      if (token !== generation || !enabled()) return;
+      const decoded = firstFrame(video);
+      await video.play();
+      await decoded;
+      if (token !== generation || !enabled()) {
+        if (current !== video) video.pause();
+        return;
+      }
+      const previous = current;
+      stopRenderer();
+      if (context && frozenContext && studio.classList.contains("is-ready")) {
+        // One opaque surface avoids the brightness dip of fading two layers.
+        // Every expressive frame is still footage, not newly drawn features.
+        frozenContext.drawImage(canvas, 0, 0);
+        transition = {start:performance.now(), duration:200};
+      } else transition = null;
+      for (const other of Object.values(videos)) {
+        other.classList.toggle("is-active", other === video);
+        if (other !== video) other.pause();
+      }
+      current = video;
+      studio.classList.add("is-ready");
+      studio.dataset.loading = "false";
+      studio.dataset.transitioning = String(!!transition);
+      const counter = `${state}Count`;
+      studio.dataset[counter] = String(Number(studio.dataset[counter] || 0) + 1);
+      studio.dataset.previous = previous?.dataset.companionVideo || "poster";
+      startRenderer();
+    } catch (error) {
+      if (token !== generation) return;
+      video.pause();
+      studio.dataset.loading = "false";
+      if (error?.name === "NotAllowedError") {
+        // Browser autoplay policy is recoverable; the footage is not broken.
+        // A deliberate click can retry without permanently disabling actions.
+        posterFallback("浏览器暂停了自动播放，点一下就能打招呼。");
+        playbackBlocked = true;
+        studio.dataset.playbackBlocked = "true";
+        if (playButton) playButton.hidden = false;
+        return;
+      }
+      failed.add(state);
+      syncControls();
+      if (state !== "idle" && !failed.has("idle")) {
+        await select("idle");
+        status.textContent = "这个小动作暂时没加载好，待机仍然可以看。";
+      } else posterFallback("视频暂时没加载好，先用这张静态小像陪你。");
+    }
+  }
+  function spark(action, point) {
+    if (!enabled()) return;
+    const box = screen.getBoundingClientRect();
+    const x = point ? point.x - box.left : box.width * .5;
+    const y = point ? point.y - box.top : box.height * (family(action) === "pat" ? .21 : .43);
+    const icons = action === "hello" ? ["✧","·","✧"] : family(action) === "pat" ? ["♡","♡","♡"]
+      : action === "pout" ? ["·","✳","·"] : ["✳","·","✳"];
+    for (let index = 0; index < icons.length; index++) {
+      const mote = document.createElement("span");
+      mote.className = "companion-mote";
+      mote.textContent = icons[index];
+      mote.style.cssText = `left:${clamp(x,18,box.width-18)}px;top:${clamp(y,20,box.height-20)}px;--mote-x:${(index-1)*24}px;--mote-delay:${index*55}ms`;
+      effects.append(mote);
+      setTimeout(() => mote.remove(), 1100);
+    }
+  }
+  function available(action) {
+    if (!failed.has(action)) return action;
+    if (family(action) === "pat") return ["pat","cuddle"].find(state => !failed.has(state));
+    if (family(action) === "poke") return ["poke","pout"].find(state => !failed.has(state));
+    return null;
+  }
+  function react(action, point, deliberate = true) {
+    if (!enabled() || !familyAvailable(action)) return;
+    clearTimeout(arrivalTimer);
+    const now = performance.now();
+    if (deliberate && action === "poke") {
+      if (now - lastPoke < 2400 || family(active) === "poke") action = "pout";
+      lastPoke = now;
+    }
+    if (deliberate && action === "pat") {
+      if (now - lastPat < 2000 || active === "pat") action = "cuddle";
+      lastPat = now;
+    }
+    action = available(action);
+    if (!action) return;
+    if (active !== "idle") {
+      // Repeated touches deepen a response without restarting it.
+      // Only one deliberate follow-up is retained, never a spammed playlist.
+      if (deliberate && action !== active) {
+        pending = {action,point};
+        studio.dataset.pending = action;
+      }
+      return;
+    }
+    pending = null;
+    studio.dataset.pending = "";
+    clearTimeout(hoverTimer);
+    spark(action, point);
+    select(action);
+  }
+  function syncControls() {
+    if (playButton) playButton.disabled = isReducedMotion();
+    for (const button of controls) {
+      const action = button.dataset.companionAction || button.dataset.companionHit;
+      button.disabled = isReducedMotion() || !familyAvailable(action);
+    }
+  }
+  function cancelGesture() {
+    clearTimeout(hoverTimer);
+    clearTimeout(holdTimer);
+    clearTimeout(arrivalTimer);
+    hoverAction = null;
+    gesture = null;
+    greetingArmed = false;
+    screen.classList.remove("has-pointer");
+  }
+  function syncPlayback() {
+    studio.dataset.suspended = String(!enabled());
+    syncControls();
+    if (!enabled()) {
+      ++generation;
+      cancelGesture();
+      pending = null;
+      studio.dataset.pending = "";
+      if (transition && transition.pausedAt === undefined) transition.pausedAt = performance.now();
+      stopRenderer();
+      for (const video of Object.values(videos)) video.pause();
+      if (isReducedMotion()) status.textContent = "动效已暂停。恢复动效后，可以继续打招呼。";
+      return;
+    }
+    warm();
+    if (playbackBlocked) return;
+    if (!current || current.ended) select("idle");
+    else {
+      active = current.dataset.companionVideo;
+      studio.dataset.state = active;
+      studio.dataset.loading = "false";
+      status.textContent = labels[active];
+      if (transition?.pausedAt !== undefined) {
+        transition.start += performance.now() - transition.pausedAt;
+        delete transition.pausedAt;
+      }
+      current.play().then(() => { if (enabled()) startRenderer(); }).catch(error => {
+        if (!enabled()) return;
+        if (error?.name === "NotAllowedError") {
+          posterFallback("点一下，继续播放小像。");
+          playbackBlocked = true;
+          studio.dataset.playbackBlocked = "true";
+          if (playButton) playButton.hidden = false;
+        }
+      });
+    }
+  }
+  for (const [state, video] of Object.entries(videos)) {
+    video.addEventListener("ended", () => {
+      if (state === "idle" || current !== video || active !== state || !enabled()) return;
+      paint();
+      const next = pending;
+      pending = null;
+      studio.dataset.pending = "";
+      if (next && !failed.has(next.action)) {
+        spark(next.action, next.point);
+        select(next.action);
+      } else select("idle");
+    });
+    video.addEventListener("error", () => {
+      failed.add(state);
+      syncControls();
+      if (current === video && enabled()) {
+        if (state !== "idle" && !failed.has("idle")) select("idle");
+        else posterFallback("视频暂时不可用，静态小像仍在这里。");
+      }
+    });
+  }
+  for (const button of $$("[data-companion-action]", studio)) {
+    button.addEventListener("click", () => react(button.dataset.companionAction));
+  }
+  playButton?.addEventListener("click", () => select("idle"));
+  for (const hotspot of $$("[data-companion-hit]", studio)) {
+    const action = hotspot.dataset.companionHit;
+    hotspot.addEventListener("pointerenter", event => {
+      if (!enabled() || event.pointerType !== "mouse") return;
+      clearTimeout(arrivalTimer);
+      hoverAction = action;
+      studio.dataset.hit = action;
+      if (active === "idle") status.textContent = action === "pat"
+        ? "轻轻摸摸头；多摸一会儿，会更开心。" : "点一下会惊讶，连续轻点会小小嘟嘴。";
+      if (action === "pat") {
+        clearTimeout(hoverTimer);
+        hoverTimer = setTimeout(() => {
+          if (hoverAction === "pat" && !gesture) react("pat",{x:event.clientX,y:event.clientY},false);
+        },650);
+      }
+    });
+    hotspot.addEventListener("pointerleave", () => {
+      hoverAction = null;
+      studio.dataset.hit = "";
+      clearTimeout(hoverTimer);
+      if (active === "idle") status.textContent = labels.idle;
+    });
+    hotspot.addEventListener("click", event => {
+      if (performance.now() < ignoreClickUntil) return;
+      react(action,event.detail ? {x:event.clientX,y:event.clientY} : null);
+    });
+    if (action !== "pat") continue;
+    hotspot.addEventListener("pointerdown", event => {
+      if (!enabled() || !event.isPrimary || event.button !== 0) return;
+      clearTimeout(hoverTimer);
+      clearTimeout(arrivalTimer);
+      gesture = {id:event.pointerId,type:event.pointerType,startX:event.clientX,startY:event.clientY,
+        x:event.clientX,y:event.clientY,distance:0,fired:false,deepened:false,inside:true};
+      if (event.pointerType === "mouse") hotspot.setPointerCapture(event.pointerId);
+      holdTimer = setTimeout(() => {
+        if (!gesture || !gesture.inside || gesture.deepened) return;
+        gesture.fired = gesture.deepened = true;
+        ignoreClickUntil = performance.now() + 1500;
+        react("cuddle",{x:gesture.x,y:gesture.y});
+      },850);
+    });
+    hotspot.addEventListener("pointermove", event => {
+      if (!gesture || event.pointerId !== gesture.id) return;
+      const box = hotspot.getBoundingClientRect();
+      const inside = event.clientX >= box.left && event.clientX <= box.right && event.clientY >= box.top && event.clientY <= box.bottom;
+      gesture.inside = inside;
+      if (!inside) clearTimeout(holdTimer);
+      gesture.distance += Math.hypot(event.clientX-gesture.x,event.clientY-gesture.y);
+      gesture.x = event.clientX; gesture.y = event.clientY;
+      const touchStroke = Math.abs(event.clientX-gesture.startX) >= Math.max(12,Math.abs(event.clientY-gesture.startY)*1.3);
+      // A phone's vertical gesture belongs to scrolling, not petting.
+      if (gesture.type !== "mouse" && !touchStroke && Math.abs(event.clientY-gesture.startY) > 10) clearTimeout(holdTimer);
+      if (inside && !gesture.fired && gesture.distance >= 12 && (gesture.type === "mouse" || touchStroke)) {
+        gesture.fired = true;
+        react("pat",{x:event.clientX,y:event.clientY});
+      }
+      if (inside && gesture.fired && !gesture.deepened && gesture.distance >= 75 && (gesture.type === "mouse" || touchStroke)) {
+        gesture.deepened = true;
+        clearTimeout(holdTimer);
+        react("cuddle",{x:event.clientX,y:event.clientY});
+      }
+    });
+    const release = event => {
+      if (!gesture || event.pointerId !== gesture.id) return;
+      if (event.type === "pointercancel" || gesture.fired || gesture.distance > 12) ignoreClickUntil = performance.now() + 350;
+      clearTimeout(holdTimer);
+      gesture = null;
+      if (hotspot.hasPointerCapture(event.pointerId)) hotspot.releasePointerCapture(event.pointerId);
+    };
+    hotspot.addEventListener("pointerup", release);
+    hotspot.addEventListener("pointercancel", release);
+    hotspot.addEventListener("lostpointercapture", () => { clearTimeout(holdTimer); gesture = null; });
+  }
+  screen.addEventListener("pointerenter", event => {
+    if (!enabled() || event.pointerType !== "mouse" || event.target !== screen || greetingArmed) return;
+    greetingArmed = true;
+    if (performance.now() - lastGreeting < 15000) return;
+    arrivalTimer = setTimeout(() => {
+      if (enabled() && active === "idle" && !hoverAction && !gesture) {
+        lastGreeting = performance.now();
+        react("hello",null,false);
+      }
+    },600);
+  });
+  screen.addEventListener("pointermove", event => {
+    if (!enabled() || event.pointerType !== "mouse") return;
+    const box = screen.getBoundingClientRect();
+    touch.style.setProperty("--touch-x",`${event.clientX-box.left}px`);
+    touch.style.setProperty("--touch-y",`${event.clientY-box.top}px`);
+    screen.classList.add("has-pointer");
+  },{passive:true});
+  screen.addEventListener("pointerleave", () => {
+    screen.classList.remove("has-pointer");
+    greetingArmed = false;
+    clearTimeout(arrivalTimer);
+  });
+  const observer = new IntersectionObserver(entries => {
+    const next = entries[0].isIntersecting;
+    if (next === visible) return;
+    visible = next;
+    syncPlayback();
+  },{threshold:0.15});
+  observer.observe(screen);
+  document.addEventListener("visibilitychange",syncPlayback);
+  motionSubscribers.add(syncPlayback);
+  syncControls();
+}
+
+  createCompanion();
 
   setSkill("backend");
   root.classList.add("js-ready");

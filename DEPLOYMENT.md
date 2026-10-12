@@ -4,7 +4,7 @@
 
 ## GitHub Pages
 
-网站入口为仓库根目录的 `index.html`，由 `main` 分支根目录发布。保留现有 `.nojekyll`、GitHub 个人资料 README 以及 README 使用的旧图片，不将网页 JavaScript 直接塞入 README。
+网站入口为仓库根目录的 `index.html`，由 `main` 分支根目录发布。2026-10-12 用户明确要求同时更新 GitHub 个人资料 README 与 Pages：README 使用同一粉色视觉、介绍、博客名片和角色动图预览，交互入口指向 Pages；不将网页 JavaScript、视频元素或 iframe 塞入 README。保留现有 `.nojekyll` 和无关旧资源。
 
 发布内容带有 `signal-lab-release` 页面标记及 `site-release.json`，用于确认线上实际出现的是本次构建，而不是旧缓存页面。新增网页资源使用内容哈希版本号。
 
@@ -20,6 +20,6 @@
 
 ## 独立静态发布
 
-页面、头像、票根、字体与语言图标均由此仓库提供，不需要第三方接口、视频或服务。根目录原有 `csdn-live.json` 是旧资源；当前网页不加载它。没有 JavaScript 时，正文、博客名片与链接仍可阅读；WebGL 不可用时保留备用图形。
+页面、头像、票根、字体、语言图标和二维角色视频均由此仓库提供，不需要第三方服务。根目录原有 `csdn-live.json` 是旧资源；当前网页不加载它。没有 JavaScript 时，正文、静态小像、博客名片与链接仍可阅读；WebGL 不可用时保留备用图形。浏览器禁止自动播放时提供点击恢复入口，媒体不可用时保留海报。
 
-`site-release.json` 记录发布标记、HTML 哈希及本轮资源哈希，用于核实 GitHub Pages 是否已经呈现本次版本。既有 README 和与网页无关的仓库文件不改动。
+`site-release.json` 记录发布标记、HTML 哈希、README 哈希及双方资源哈希，用于核实 GitHub 与 Pages 是否已经呈现同一版本。角色提供待机、眨眼招呼、短摸头、持续开心、惊讶、嘟嘴；原片仍有生成质量和回正镜头的限制，48fps 是插值输出，不是48fps原生视频。不宣称完全消除所有素材形变。
