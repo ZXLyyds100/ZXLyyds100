@@ -1,15 +1,15 @@
-<!-- signal-lab-profile: signal-lab-20261012-482a63bddc33 -->
+<!-- signal-lab-profile: signal-lab-20261012-dd8bd9719d1c -->
 
 <a href="https://zxlyyds100.github.io/ZXLyyds100/#companion">
   <picture>
-    <source media="(max-width: 600px) and (prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="./assets/readme/hero-dark-mobile.png">
-    <source media="(max-width: 600px) and (prefers-reduced-motion: reduce)" srcset="./assets/readme/hero-light-mobile.png">
-    <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="./assets/readme/hero-dark.png">
-    <source media="(prefers-reduced-motion: reduce)" srcset="./assets/readme/hero-light.png">
-    <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/readme/hero-dark-mobile.gif">
-    <source media="(max-width: 600px)" srcset="./assets/readme/hero-light-mobile.gif">
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/readme/hero-dark.gif">
-    <img src="./assets/readme/hero-light.gif" width="100%" alt="阿亮 Aliang 的粉色信号实验室。Code & curiosity. SCAU 软件工程，后端与 Agent，实习升级中。粉发角色轻轻闭眼微笑。点击进入互动网页。">
+    <source media="(max-width: 600px) and (prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="./assets/readme-v2/hero-still-dark-mobile-9b7fa6aed7.svg">
+    <source media="(max-width: 600px) and (prefers-reduced-motion: reduce)" srcset="./assets/readme-v2/hero-still-light-mobile-96fd453d55.svg">
+    <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="./assets/readme-v2/hero-still-dark-758d142de9.svg">
+    <source media="(prefers-reduced-motion: reduce)" srcset="./assets/readme-v2/hero-still-light-60690b62e9.svg">
+    <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/readme-v2/hero-dark-mobile-0d6f1233a0.svg">
+    <source media="(max-width: 600px)" srcset="./assets/readme-v2/hero-light-mobile-c4db941a63.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/readme-v2/hero-dark-45793dbe2b.svg">
+    <img src="./assets/readme-v2/hero-light-5c487b7fdd.svg" width="100%" alt="阿亮 Aliang 的粉色信号实验室。Code & curiosity. 清晰的矢量文字、持续流动的液态信号与轨道。点击进入互动网页。">
   </picture>
 </a>
 
@@ -27,16 +27,24 @@
   <a href="https://blog.csdn.net/2401_87808951">翻翻我的笔记 ↗</a>
 </p>
 
-<p align="center"><sub>这里是角色动图预览。摸头、戳脸、眨眼招呼等互动，在网页里体验。</sub></p>
+<p align="center">
+  <a href="https://zxlyyds100.github.io/ZXLyyds100/#companion">
+    <picture>
+      <source media="(prefers-reduced-motion: reduce)" srcset="./assets/readme-v2/companion-still-c56f963575.png">
+      <img src="./assets/readme-v2/companion-hq-ed34eed13b.webp" width="232" height="258" alt="粉发二维角色循环微笑、睁眼和惊讶的高分辨率动画。点击在网页里摸摸头、戳戳脸。">
+    </picture>
+  </a><br>
+  <sub>角色动图预览 · 在网页里，摸摸头、戳戳脸，和她打个招呼 ♡</sub>
+</p>
 
 ### 写代码，也把过程记下来。
 
 <a href="https://blog.csdn.net/2401_87808951">
   <picture>
-    <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/readme/blog-dark-mobile.png">
-    <source media="(max-width: 600px)" srcset="./assets/readme/blog-light-mobile.png">
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/readme/blog-dark.png">
-    <img src="./assets/readme/blog-light.png" width="100%" alt="CSDN 博客名片：Anastasiozzzz，阿亮 Aliang。约 9.7 万累计访问，130+ 篇原创，450+ 位关注者，2,300+ 次点赞。点击打开 CSDN 主页。">
+    <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/readme-v2/blog-dark-mobile-811d5cbeef.svg">
+    <source media="(max-width: 600px)" srcset="./assets/readme-v2/blog-light-mobile-25b5cfc2e6.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/readme-v2/blog-dark-9e41930bbe.svg">
+    <img src="./assets/readme-v2/blog-light-6730e6cdac.svg" width="100%" alt="CSDN 博客名片：Anastasiozzzz，阿亮 Aliang。约 9.7 万累计访问，130+ 篇原创，450+ 位关注者，2,300+ 次点赞。点击打开 CSDN 主页。">
   </picture>
 </a>
 
@@ -69,13 +77,15 @@
 ### 代码有下一行，工作有下一站。
 
 <picture>
-  <source media="(max-width: 600px)" srcset="./assets/lab/ticket-bilibili-mobile.png">
-  <img src="./assets/lab/ticket-bilibili.png" width="100%" alt="bilibili / 哔哩哔哩，后端开发实习生，2026 年 9 月至今。">
+  <source media="(max-width: 600px)" srcset="./assets/readme-v2/ticket-bilibili-mobile-0900b99eb0.svg">
+  <img src="./assets/readme-v2/ticket-bilibili-e5fe7c4f4b.svg" width="100%" alt="bilibili / 哔哩哔哩，后端开发实习生，2026 年 9 月至今。">
 </picture>
 
+<br>
+
 <picture>
-  <source media="(max-width: 600px)" srcset="./assets/lab/ticket-oneway-mobile.png">
-  <img src="./assets/lab/ticket-oneway.png" width="100%" alt="OneWay，后端开发实习生，2026 年 3 月至 6 月。">
+  <source media="(max-width: 600px)" srcset="./assets/readme-v2/ticket-oneway-mobile-bc0b53942d.svg">
+  <img src="./assets/readme-v2/ticket-oneway-15089cce80.svg" width="100%" alt="OneWay，后端开发实习生，2026 年 3 月至 6 月。">
 </picture>
 
 <details>
