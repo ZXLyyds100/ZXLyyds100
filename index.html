@@ -8,7 +8,7 @@
   <link rel="preload" as="font" type="font/woff2" href="./assets/fonts/manrope-latin.woff2?v=e310b55a7fd9" crossorigin>
   <link rel="preload" as="font" type="font/woff2" href="./assets/fonts/instrument-serif-italic-latin.woff2?v=6ee678c33f38" crossorigin>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='12' fill='%23f8dbe9'/%3E%3Ctext x='20' y='30' font-size='30' text-anchor='middle' fill='%23bc4078'%3E✳%3C/text%3E%3C/svg%3E">
-  <meta name="signal-lab-release" content="signal-lab-20261012-dd8bd9719d1c">
+  <meta name="signal-lab-release" content="signal-lab-20261015-2a2dfac7f1b1">
   <title>Aliang · Signal Lab</title>
   <style>@font-face{font-family:Manrope;src:url("./assets/fonts/manrope-latin.woff2?v=e310b55a7fd9") format("woff2");font-weight:200 800;font-display:swap}
 @font-face{font-family:"Instrument Serif";src:url("./assets/fonts/instrument-serif-latin.woff2?v=60c06664b5a9") format("woff2");font-weight:400;font-display:swap}
@@ -555,6 +555,15 @@ html[data-suspended="true"] *,html[data-suspended="true"] *::before,html[data-su
   [data-tilt],.magnetic{transform:none!important}
 }
 </style>
+  <link rel="stylesheet" href="./prototype.css?v=ac4efbb3b1e3">
+  <link rel="stylesheet" href="./studio.css?v=a2ba489c0f9e">
+  <link rel="stylesheet" href="./atelier.css?v=aef5c627105b">
+  <link rel="stylesheet" href="./atlas.css?v=a385f71452df">
+  <link rel="stylesheet" href="./engineering.css?v=60699f86cbd7">
+  <link rel="stylesheet" href="./technology-exhibits.css?v=86bd05d83770">
+  <script type="importmap">{"imports":{"three":"./assets/vendor/three.module.js?v=c8211c69345d"}}</script>
+  <link rel="stylesheet" href="./assets/technology-scene.css?v=ce1475ffd0e8">
+  <script defer src="./assets/technology-scene.js?v=fa6e481ec4ec"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">跳到正文</a>
@@ -592,7 +601,7 @@ html[data-suspended="true"] *,html[data-suspended="true"] *::before,html[data-su
         </h1>
         <p class="hero-manifesto hero-enter">把好奇心，写进下一行代码。</p>
         <p class="hero-description hero-enter">探索后端系统与 Agent / AI，<br>让复杂的连接，变成清晰的可能。</p>
-        <div class="hero-disciplines hero-enter"><span>Java</span><i>·</i><span>Go</span><i>·</i><span>Python</span><span class="discipline-divider"></span><span class="rotating-discipline" aria-label="Backend systems, Agent workflows, Ideas in motion"><span aria-hidden="true"><b>BACKEND SYSTEMS</b><b>AGENT WORKFLOWS</b><b>IDEAS IN MOTION</b><b>BACKEND SYSTEMS</b></span></span></div>
+        <div class="hero-disciplines hero-enter"><span>Java</span><i>·</i><span>Go</span><i>·</i><span>Python</span><span class="discipline-divider"></span><span class="rotating-discipline" role="img" aria-label="Backend systems, Agent workflows, Ideas in motion"><span aria-hidden="true"><b>BACKEND SYSTEMS</b><b>AGENT WORKFLOWS</b><b>IDEAS IN MOTION</b><b>BACKEND SYSTEMS</b></span></span></div>
         <div class="hero-actions hero-enter">
           <a class="button button-dark magnetic" href="#toolbox"><span>进入实验室 <span class="arrow">↗</span></span></a>
           <a class="hero-note-link" href="#writing">翻翻我的笔记 <span>↗</span></a>
@@ -670,56 +679,72 @@ html[data-suspended="true"] *,html[data-suspended="true"] *::before,html[data-su
       <div class="page-wrap">
         <div class="section-label reveal"><span>02 / THE TOOLBOX</span><span>CONNECT THE DOTS</span></div>
         <div class="section-heading">
-          <h2 class="reveal" id="toolbox-title">从工具，<br>到<em>新的可能。</em></h2>
-          <p class="section-description reveal">语言是入口，连接才是有趣的部分。<br>点选一条轨道，看看我正在探索什么。</p>
+          <h2 class="reveal" id="toolbox-title">把热爱，<br><em>写进每一行代码。</em></h2>
+          <p class="section-description reveal">后端是主线，Agent / AI 是正在探索的方向。<br>点一下漂浮的技术，看看它们如何连接。</p>
         </div>
-        <div class="toolbox-layout">
-          <div class="skill-orbit reveal" id="skill-orbit">
-            <div class="network-topline"><span>EXPLORATION MAP / 02</span><span class="network-status"><i></i> CONNECT THE DOTS</span></div>
-            <div class="orbit-background" aria-hidden="true"></div>
-            <svg class="orbit-connections" viewBox="0 0 660 570" preserveAspectRatio="none" aria-hidden="true">
-              <defs><linearGradient id="orbit-line"><stop stop-color="#d9457f"/><stop offset="1" stop-color="#97b19a"/></linearGradient><filter id="signal-glow"><feGaussianBlur stdDeviation="2"/></filter></defs>
-              <ellipse cx="330" cy="329" rx="275" ry="128"/><ellipse cx="330" cy="329" rx="240" ry="150" transform="rotate(-16 330 329)"/>
-              <path class="connection-path" d="M115 156V195Q115 214 135 214H285Q305 214 305 237V258M330 156V258M545 156V195Q545 214 525 214H375Q355 214 355 237V258M330 401V482"/>
-              <path class="beam-path" d="M115 156V195Q115 214 135 214H285Q305 214 305 237V258"/><path class="beam-path second" d="M330 156V258"/><path class="beam-path third" d="M545 156V195Q545 214 525 214H375Q355 214 355 237V258"/>
-              <circle class="signal-particle" r="3"><animateMotion dur="4.4s" repeatCount="indefinite" path="M115 156V195Q115 214 135 214H285Q305 214 305 237V258"/></circle>
-              <circle class="signal-particle sage" r="3"><animateMotion dur="3.8s" repeatCount="indefinite" path="M545 156V195Q545 214 525 214H375Q355 214 355 237V258"/></circle>
-              <circle class="signal-particle" r="3"><animateMotion dur="3s" repeatCount="indefinite" path="M330 156V258"/></circle>
-              <circle class="signal-particle" r="3"><animateMotion dur="3s" repeatCount="indefinite" path="M330 401V482"/></circle>
-            </svg>
-            <div class="language-modules">
-              <button class="language-module lang-java" data-language="java" data-tilt aria-pressed="true"><span class="module-kicker">LANGUAGE / 01</span><span class="module-name"><span class="language-emblem"><img src="./assets/lab/lang-java.webp?v=07e89a3d02db" width="36" height="36" alt=""><i aria-hidden="true"></i></span><strong>Java</strong></span><span class="module-detail">Spring ecosystem</span><span class="module-mark">{ }</span></button>
-              <button class="language-module lang-go" data-language="go" data-tilt aria-pressed="false"><span class="module-kicker">LANGUAGE / 02</span><span class="module-name"><span class="language-emblem"><img src="./assets/lab/lang-go.webp?v=2ff5a95103b3" width="36" height="36" alt=""><i aria-hidden="true"></i></span><strong>Go</strong></span><span class="module-detail">Services & concurrency</span><span class="module-mark">go →</span></button>
-              <button class="language-module lang-python" data-language="python" data-tilt aria-pressed="false"><span class="module-kicker">LANGUAGE / 03</span><span class="module-name"><span class="language-emblem"><img src="./assets/lab/lang-python.webp?v=e0191640f2b5" width="36" height="36" alt=""><i aria-hidden="true"></i></span><strong>Python</strong></span><span class="module-detail">Tooling & AI</span><span class="module-mark">&gt;&gt;&gt;</span></button>
+        <figure class="technology-world reveal" id="technology-world" aria-label="人物视频与漂浮的技术栈">
+          <div class="technology-scene" id="technology-scene">
+            <div class="technology-media" aria-hidden="true">
+              <img class="technology-poster" src="./assets/technology-scene/bedroom-poster.webp?v=6c9e98dfb480" width="1280" height="720" alt="" loading="lazy">
+              <video class="technology-video" id="technology-video" data-src="./assets/technology-scene/bedroom-loop.mp4?v=6ec950dd9b95" width="1280" height="720" poster="./assets/technology-scene/bedroom-poster.webp?v=6c9e98dfb480" muted playsinline loop preload="none" tabindex="-1"></video>
             </div>
-            <button class="agent-core" data-skill="agent" aria-pressed="false"><span class="core-reactor" aria-hidden="true"><i></i><i></i><i></i><b>✳</b></span><span class="core-label"><i></i> AGENT / EXPLORATION</span><span class="core-title">Connect. <em>Reason.</em> Act.</span><span class="core-frameworks">LangChain4j · LangGraph4j · Spring AI</span><span class="core-flow"><b>OBSERVE</b><i>→</i><b>REASON</b><i>→</i><b>ACT</b><i>→</i><b>VERIFY</b></span></button>
-            <span class="concept-chip chip-rag">RAG</span><span class="concept-chip chip-mcp">MCP</span><span class="concept-chip chip-context">Context</span><span class="concept-chip chip-tools">Tool Calling</span><span class="concept-chip chip-memory">Memory</span><span class="concept-chip chip-evals">Harness / Evals</span>
-            <button class="web-foundation" data-skill="web" aria-pressed="false"><span>WEB / INTERACTION LAYER</span><strong>HTML <i>·</i> CSS <i>·</i> JavaScript <i>·</i> Vue</strong><span>↗</span></button>
-          </div>
-          <div class="skill-detail reveal" aria-live="polite">
-            <div class="skill-tabs" role="group" aria-label="技术方向">
-              <button type="button" data-skill="backend" aria-pressed="true">Backend</button>
-              <button type="button" data-skill="agent" aria-pressed="false">Agent / AI</button>
-              <button type="button" data-skill="web" aria-pressed="false">Web</button>
+            <div class="technology-cloud" role="group" aria-label="选择技术，查看介绍">
+              <div class="tech-location" data-position="java"><button class="tech-bubble tech-bubble-primary" type="button" data-tech="java" aria-controls="technology-inspector" aria-pressed="true"><span class="tech-symbol" aria-hidden="true"><img src="./assets/lab/tech-java.svg" width="44" height="44" alt=""></span><span><small>BACKEND / THE MAIN THREAD</small><strong>Java</strong></span><i aria-hidden="true">↗</i></button></div>
+              <div class="tech-location" data-position="go"><button class="tech-bubble" type="button" data-tech="go" aria-controls="technology-inspector" aria-pressed="false"><span class="tech-symbol" aria-hidden="true"><img src="./assets/lab/tech-go.svg" width="36" height="36" alt=""></span><span><small>SERVICES &amp; CONCURRENCY</small><strong>Go</strong></span></button></div>
+              <div class="tech-location" data-position="python"><button class="tech-bubble" type="button" data-tech="python" aria-controls="technology-inspector" aria-pressed="false"><span class="tech-symbol" aria-hidden="true"><img src="./assets/lab/tech-python.svg" width="36" height="36" alt=""></span><span><small>TOOLS &amp; AUTOMATION</small><strong>Python</strong></span></button></div>
+              <div class="tech-location" data-position="spring"><button class="tech-bubble" type="button" data-tech="spring" aria-controls="technology-inspector" aria-pressed="false"><span class="tech-symbol symbol-spring" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M26 5C9 3 4 12 7 21c8 8 19 1 19-16Z"/><path d="M5 28 23 9M11 16l1 6 7 1"/></svg></span><span><small>THE JAVA ECOSYSTEM</small><strong>Spring Boot</strong></span></button></div>
+              <div class="tech-location" data-position="mysql"><button class="tech-bubble tech-bubble-small" type="button" data-tech="mysql" aria-controls="technology-inspector" aria-pressed="false"><span class="tech-mini-icon" aria-hidden="true">▱</span><strong>MySQL</strong></button></div>
+              <div class="tech-location" data-position="redis"><button class="tech-bubble tech-bubble-small" type="button" data-tech="redis" aria-controls="technology-inspector" aria-pressed="false"><span class="tech-mini-icon" aria-hidden="true">▰</span><strong>Redis</strong></button></div>
+              <div class="tech-location" data-position="langchain"><button class="tech-bubble tech-bubble-primary" type="button" data-tech="langchain" aria-controls="technology-inspector" aria-pressed="false"><span class="tech-symbol symbol-agent" aria-hidden="true">✳</span><span><small>AI / AN OPEN EXPLORATION</small><strong>LangChain4j</strong></span><i aria-hidden="true">↗</i></button></div>
+              <div class="tech-location" data-position="springai"><button class="tech-bubble" type="button" data-tech="springai" aria-controls="technology-inspector" aria-pressed="false"><span class="tech-symbol symbol-spring-ai" aria-hidden="true">✧</span><span><small>MODELS INTO APPLICATIONS</small><strong>Spring AI</strong></span></button></div>
+              <div class="tech-location" data-position="rag"><button class="tech-bubble" type="button" data-tech="rag" aria-controls="technology-inspector" aria-pressed="false"><span class="tech-symbol symbol-context" aria-hidden="true"><svg viewBox="0 0 32 32"><rect x="5" y="4" width="17" height="22" rx="3"/><path d="M10 10h7m-7 5h7m-7 5h4m10-3 4 4-4 4m-5-4h9"/></svg></span><span><small>CONTEXT MATTERS</small><strong>RAG</strong></span></button></div>
+              <div class="tech-location" data-position="mcp"><button class="tech-bubble tech-bubble-small" type="button" data-tech="mcp" aria-controls="technology-inspector" aria-pressed="false"><span class="tech-mini-icon" aria-hidden="true">⌘</span><strong>MCP</strong><i aria-hidden="true">↗</i></button></div>
+              <div class="tech-location" data-position="vue"><button class="tech-bubble" type="button" data-tech="vue" aria-controls="technology-inspector" aria-pressed="false"><span class="tech-symbol symbol-vue" aria-hidden="true"><svg viewBox="0 0 24 21"><path fill="#4f8069" stroke="none" d="M0 0h5l7 12L19 0h5L12 21Z"/><path fill="#344840" stroke="none" d="M5 0h4l3 5 3-5h4l-7 12Z"/></svg></span><span><small>FRONTEND / COMPONENTS</small><strong>Vue</strong></span></button></div>
+              <div class="tech-location" data-position="javascript"><button class="tech-bubble" type="button" data-tech="javascript" aria-controls="technology-inspector" aria-pressed="false"><span class="tech-symbol symbol-js" aria-hidden="true">JS</span><span><small>STATE &amp; INTERACTION</small><strong>JavaScript</strong></span></button></div>
+              <div class="tech-location" data-position="htmlcss"><button class="tech-bubble tech-bubble-small" type="button" data-tech="htmlcss" aria-controls="technology-inspector" aria-pressed="false"><span class="tech-mini-icon" aria-hidden="true">&lt;/&gt;</span><strong>HTML / CSS</strong></button></div>
             </div>
-            <div class="skill-panel" id="skill-panel"><div class="eyebrow">01 / BACKEND SYSTEMS</div><h3>把复杂，拆成有序。</h3><p>关注服务、数据与并发，让问题沿着清晰的执行链路变得可理解。</p><div class="skill-list"><div class="skill-row"><strong>Java</strong><span>Spring · Spring Boot · Spring Cloud · Spring Security</span></div><div class="skill-row"><strong>Go</strong><span>服务开发 · Web API · 并发</span></div><div class="skill-row"><strong>Python</strong><span>脚本 · 服务 · AI 应用工具</span></div></div></div>
           </div>
+          <figcaption class="technology-scene-caption"><span><i aria-hidden="true"></i> A LITTLE CODE. A LITTLE COMFORT.</span><button type="button" id="technology-video-toggle" aria-label="暂停人物视频" aria-pressed="false"><span aria-hidden="true" class="technology-play-icon">Ⅱ</span><span class="technology-play-label">暂停视频</span></button></figcaption>
+        </figure>
+        <div class="technology-inspector" id="technology-inspector" aria-live="polite" aria-atomic="true">
+          <div class="technology-selected"><span class="eyebrow" id="technology-category">01 / BACKEND</span><h3 id="technology-name">Java</h3></div>
+          <p id="technology-description">后端开发的主线。围绕 Spring 生态，关注接口设计、业务边界、并发处理与服务之间的数据流转。</p>
+          <ul class="technology-related" id="technology-related" aria-label="关联技术"><li>Spring Boot</li><li>Spring Cloud</li><li>Spring Security</li></ul>
         </div>
+        <details class="technology-catalog">
+          <summary>查看完整技术栈 <span aria-hidden="true">＋</span></summary>
+          <div class="technology-catalog-grid">
+            <section aria-label="后端技术"><h3>后端 / 服务与数据</h3><p>Java · Go · Python<br>Spring · Spring Boot · Spring Cloud · Spring Security<br>MySQL · Redis · RabbitMQ · Nacos</p></section>
+            <section aria-label="AI 和 Agent 技术"><h3>AI / Agent 探索</h3><p>LangChain4j · Spring AI · LangGraph4j<br>RAG · MCP · Tool Calling · Graph · Multi-Agent<br>Context · Memory · Agent Harness · Evals</p></section>
+            <section aria-label="前端技术"><h3>前端 / 界面与交互</h3><p>HTML · CSS · JavaScript · Vue<br>响应式布局 · DOM · 事件与状态<br>组件化页面 · 样式与动效</p></section>
+          </div>
+        </details>
         <div class="infrastructure reveal"><span class="eyebrow">UNDER THE SURFACE</span><div><span class="infra-token"><svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="5" rx="7" ry="3"/><path d="M5 5v13c0 4 14 4 14 0V5M5 11c0 4 14 4 14 0"/></svg>MySQL</span><span class="infra-token"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 8 9-5 9 5-9 5Zm0 5 9 5 9-5M3 18l9 5 9-5"/></svg>Redis</span><span class="infra-token"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="6" height="6" rx="1"/><rect x="15" y="15" width="6" height="6" rx="1"/><path d="M9 6h9v9M6 9v9h9"/></svg>RabbitMQ</span><span class="infra-token"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 9 5v10l-9 5-9-5V7ZM3 7l9 5 9-5M12 12v10"/><circle cx="12" cy="12" r="2"/></svg>Nacos</span><span class="infra-token"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 15h17c-1 5-5 7-9 7s-7-2-8-7ZM20 15l2-3"/><path d="M5 9h4v4H5Zm6 0h4v4h-4Zm6 0h4v4h-4Zm-6-6h4v4h-4Z"/></svg>Docker</span><span class="infra-token"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="m7 9 4 3-4 3M13 16h4"/></svg>Linux</span><span class="infra-token"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="7" cy="5" r="2"/><circle cx="17" cy="8" r="2"/><circle cx="7" cy="20" r="2"/><path d="M7 7v11M17 10v2c0 5-10 3-10 6"/></svg>Git</span><span class="infra-token"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 9 5v10l-9 5-9-5V8ZM3 8l9 5 9-5M12 13v10"/><path d="m8 5 9 5v5"/></svg>Maven</span></div></div>
       </div>
     </section>
-    <section class="signal-interlude" aria-label="从想法到实践的交互信号实验">
+    <section class="studio-experiment" id="signal-experiment" aria-labelledby="experiment-title">
       <div class="page-wrap">
-        <div class="interlude-caption reveal"><span class="eyebrow">A SMALL INTERACTIVE EXPERIMENT</span><span>点亮信号，让想法向前走。 ↘</span></div>
-        <div class="signal-flow reveal" id="signal-flow">
-          <canvas class="signal-loom" id="signal-loom" aria-hidden="true"></canvas>
-          <svg class="flow-wires" viewBox="0 0 1000 150" preserveAspectRatio="none" aria-hidden="true"><path d="M80 75H920"/><path class="flow-packet" d="M80 75H920"/></svg>
-          <button class="flow-node" type="button" data-flow="0" aria-pressed="true"><span class="flow-index">01 / INPUT</span><strong>Curiosity<span>↗</span></strong><span class="flow-node-note">从一个好问题开始</span><i class="flow-node-port"></i></button>
-          <button class="flow-node" type="button" data-flow="1" aria-pressed="false"><span class="flow-index">02 / CONNECT</span><strong>Context<span>↗</span></strong><span class="flow-node-note">把零散线索连接起来</span><i class="flow-node-port"></i></button>
-          <button class="flow-node" type="button" data-flow="2" aria-pressed="false"><span class="flow-index">03 / BUILD</span><strong>Craft<span>↗</span></strong><span class="flow-node-note">让思考成为真实产物</span><i class="flow-node-port"></i></button>
-          <button class="flow-node" type="button" data-flow="3" aria-pressed="false"><span class="flow-index">04 / REFINE</span><strong>Iterate<span>↗</span></strong><span class="flow-node-note">检查、打磨、继续向前</span><i class="flow-node-port"></i></button>
+        <div class="section-label"><span>INTERLUDE / SIGNAL FIELD</span><span>SHAPE THE SIGNAL.</span></div>
+        <div class="studio-heading field-heading">
+          <h2 id="experiment-title">让想法，<span>产生回响。</span></h2>
+          <p>一片会回应你的金属波场。<br>调节秩序，触发涟漪，观察变化。</p>
         </div>
-        <p class="flow-status" id="flow-status" role="status">01 / 好奇心，是一切的入口。</p>
+        <div class="signal-field" id="signal-field" data-preset="resonance">
+          <div class="field-topline"><span><i></i> SIGNAL / FIELD</span><span>AN INTERACTIVE SCULPTURE</span></div>
+          <div class="field-editorial" aria-hidden="true"><span>Less noise.</span><em>More signal.</em><small>IDEAS ARE ONLY THE BEGINNING.</small></div>
+          <div class="studio-viewport" id="experiment-viewport" aria-hidden="true">
+            <svg class="studio-fallback field-fallback" viewBox="0 0 1000 600"><g fill="none" stroke="#d77a9e" stroke-width="4">
+              <path d="M210 360C360 90 530 520 820 250"/><path d="M210 373C360 103 530 533 820 263"/><path d="M210 386C360 116 530 546 820 276"/><path d="M210 399C360 129 530 559 820 289"/><path d="M210 412C360 142 530 572 820 302"/><path d="M210 425C360 155 530 585 820 315"/><path d="M210 438C360 168 530 598 820 328"/><path d="M210 451C360 181 530 611 820 341"/>
+            </g></svg>
+          </div>
+          <div class="field-presets" role="group" aria-label="选择波场形态"><button type="button" data-field-preset="flow" aria-pressed="false">01 / 流动</button><button type="button" data-field-preset="resonance" aria-pressed="true">02 / 共振</button><button type="button" data-field-preset="fold" aria-pressed="false">03 / 折叠</button></div>
+          <div class="field-controls">
+            <div class="field-tuning"><label for="field-order">NOISE <span id="field-order-value">65</span> SIGNAL</label><input type="range" id="field-order" min="0" max="100" value="65" aria-label="调节波场的秩序"><p>拖动滑杆，改变金属带的起伏。</p></div>
+            <div class="field-action-group"><button type="button" id="field-pulse" class="field-pulse" disabled>触发回响 <span aria-hidden="true">↗</span></button><button type="button" id="field-pause" class="field-pause" aria-pressed="false" aria-label="暂停波场动画" disabled>Ⅱ</button></div>
+          </div>
+          <div class="field-bottomline"><span id="field-status" role="status" aria-live="polite">共振 / 让不同的起伏，成为同一个频率。</span><span id="field-hint">点击波场，也会激起涟漪。</span></div>
+        </div>
+        <div class="field-notes"><span>FORM / FREQUENCY / FEEDBACK.</span><p>拖动改变视角 · 三种形态 · 每次点击，都是一次新的回响</p></div>
       </div>
     </section>
     <section class="writing-section page-wrap" id="writing" aria-labelledby="writing-title">
@@ -829,8 +854,8 @@ html[data-suspended="true"] *,html[data-suspended="true"] *::before,html[data-su
   const clamp = (value, min = 0, max = 1) => Math.max(min, Math.min(max, value));
   const lerp = (a, b, t) => a + (b - a) * t;
   const preferences = {
-    get(key) { try { return localStorage.getItem(`aliang-${key}`); } catch { return null; } },
-    set(key, value) { try { localStorage.setItem(`aliang-${key}`, value); } catch { /* Private browsing is still fully usable. */ } }
+    get(key) { try { return localStorage.getItem(`aliang-prototype-${key}`); } catch { return null; } },
+    set(key, value) { try { localStorage.setItem(`aliang-prototype-${key}`, value); } catch { /* Private browsing is still fully usable. */ } }
   };
   const reducedQuery = matchMedia("(prefers-reduced-motion: reduce)");
   const coarseQuery = matchMedia("(pointer: coarse)");
@@ -927,7 +952,7 @@ html[data-suspended="true"] *,html[data-suspended="true"] *::before,html[data-su
     button.setAttribute("aria-pressed", String(dark));
     button.setAttribute("aria-label", dark ? "切换浅色" : "切换深色");
     button.title = button.getAttribute("aria-label");
-    $('meta[name="theme-color"]').content = dark ? "#181118" : "#fff5f8";
+    $('meta[name="theme-color"]').content = dark ? "#1c121a" : "#fcf7f9";
     scene?.drawOnce();
     backdrop?.drawOnce();
     ambient?.drawOnce();
@@ -1012,7 +1037,7 @@ html[data-suspended="true"] *,html[data-suspended="true"] *::before,html[data-su
     for (const entry of entries) motionRegions.set(entry.target, entry.isIntersecting);
     syncRegionMotion();
   }, { rootMargin:"120px", threshold:0 });
-  $$(".marquee-band,.skill-orbit,.signal-flow,.notes-grid,.csdn-layout,.projects-grid,.contact-orbit,#sculpture-stage,.rotating-discipline").forEach(region => {
+  $$(".marquee-band,.technology-scene,.signal-flow,.notes-grid,.csdn-layout,.projects-grid,.contact-orbit,#sculpture-stage,.rotating-discipline").forEach(region => {
     motionRegions.set(region, false);
     regionObserver.observe(region);
   });
@@ -1143,149 +1168,6 @@ html[data-suspended="true"] *,html[data-suspended="true"] *::before,html[data-su
       setTimeout(() => ripple.remove(), 800);
     }, { passive:true });
   }
-
-  const skillDefinitions = {
-    backend: { number:"01 / BACKEND SYSTEMS", title:"把复杂，拆成有序。", description:"关注服务、数据与并发，让问题沿着清晰的执行链路变得可理解。", rows:[["Java","Spring · Spring Boot · Spring Cloud · Spring Security"],["Go","服务开发 · Web API · 并发"],["Python","脚本 · 服务 · AI 应用工具"]] },
-    agent: { number:"02 / AGENT EXPLORATION", title:"连接工具，也连接想法。", description:"从工具调用与上下文，到多 Agent 工作流，持续探索更可靠的 Agent 系统。", rows:[["Framework","LangChain4j · LangGraph4j · Spring AI"],["Context","RAG · MCP · 工具调用 · 上下文 · 记忆"],["Workflow","Graph · Multi-Agent · Harness · Evals"]] },
-    web: { number:"03 / FRONTEND PRACTICE", title:"让想法，在界面里发生。", description:"保留前端基础与页面交互实践，把结构、样式和状态转化为可以触碰的体验。", rows:[["HTML / CSS","页面结构 · 响应式布局 · 样式与动效"],["JavaScript","状态 · 事件 · DOM 与交互"],["Vue","组件化页面 · 状态与交互基础"]] }
-  };
-  const skillMarkup = data => `<div class="eyebrow">${data.number}</div><h3>${data.title}</h3><p>${data.description}</p><div class="skill-list">${data.rows.map(([title,text]) => `<div class="skill-row"><strong>${title}</strong><span>${text}</span></div>`).join("")}</div>`;
-  function setSkill(name) {
-    if (!skillDefinitions[name]) return;
-    const panel = $("#skill-panel");
-    panel.getAnimations().forEach(animation => animation.cancel());
-    panel.innerHTML = skillMarkup(skillDefinitions[name]);
-    panel.dataset.skill = name;
-    $$("[data-skill]").forEach(button => button.setAttribute("aria-pressed", String(button.dataset.skill === name)));
-    $("#skill-orbit").dataset.active = name;
-    $(".network-status").innerHTML = `<i></i>${{backend:"CONNECT THE DOTS",agent:"CONTEXT → TOOLS → ACT",web:"STRUCTURE → INTERACTION"}[name]}`;
-    if (name !== "backend") $$("[data-language]").forEach(button => button.setAttribute("aria-pressed","false"));
-    else if (!$('[data-language][aria-pressed="true"]')) $('[data-language="java"]').setAttribute("aria-pressed","true");
-    if (!isReducedMotion()) panel.animate([{opacity:0,transform:"translateY(10px)",filter:"blur(3px)"},{opacity:1,transform:"translateY(0)",filter:"blur(0)"}],{duration:470,easing:"cubic-bezier(.22,1,.36,1)",fill:"both"});
-  }
-  $$("[data-skill]").forEach(button => button.addEventListener("click", () => setSkill(button.dataset.skill)));
-  $$("[data-language]").forEach(button => button.addEventListener("click",() => {
-    setSkill("backend");
-    $$("[data-language]").forEach(node => node.setAttribute("aria-pressed",String(node === button)));
-    const name = button.dataset.language;
-    const rowNames = {java:"Java",go:"Go",python:"Python"};
-    $$(".skill-row").forEach(row => row.classList.toggle("is-selected",$("strong",row).textContent === rowNames[name]));
-    $(".network-status").innerHTML = `<i></i>${rowNames[name].toUpperCase()} → BACKEND`;
-    ambient?.ripple(innerWidth*.42,innerHeight*.45);
-  }));
-  $("#skill-orbit").addEventListener("pointerenter",() => $("#skill-orbit").classList.add("is-engaged"));
-  $("#skill-orbit").addEventListener("pointerleave",() => $("#skill-orbit").classList.remove("is-engaged"));
-  motionSubscribers.add(() => { if (isReducedMotion()) $("#skill-panel").getAnimations().forEach(animation => animation.finish()); });
-
-  function createSignalFlow() {
-    const stage = $("#signal-flow");
-    const canvas = $("#signal-loom");
-    const context = canvas.getContext("2d", { alpha:true });
-    const nodes = $$("[data-flow]", stage);
-    const messages = ["01 / 好奇心，是一切的入口。","02 / 给问题补上上下文，连接才有意义。","03 / 把想法写进真实的代码与产物。","04 / 检查、打磨，下一轮再好一点。"];
-    const state = { visible:false, age:0, active:0, hold:0, time:0, width:1, height:1, lastDraw:0, frames:0, pointerX:-1000, pointerY:-1000 };
-    function drawOnce() {
-      if (!context) return;
-      const {width,height,time} = state;
-      context.clearRect(0,0,width,height);
-      const dark = root.dataset.theme === "dark";
-      const tint = dark ? "245,156,198" : "178,61,115";
-      const columns = coarseQuery.matches ? 65 : 104;
-      const rows = coarseQuery.matches ? 15 : 24;
-      for (let row = 0; row < rows; row++) {
-        const depth = row / (rows - 1);
-        const spread = (depth - .5) * height * .48;
-        context.beginPath();
-        const points = [];
-        for (let column = 0; column <= columns; column++) {
-          const u = column / columns;
-          const x = width * u + spread * .27;
-          let y = height * .48 + Math.sin(u * 6.28 - time * .58) * height * .14
-            + Math.sin(u * 12.56 + time * .3) * height * .04
-            + spread * (.65 + .35 * Math.sin(u * 5.4 + time * .18));
-          const distance = (x - state.pointerX) ** 2 + (y - state.pointerY) ** 2;
-          y += Math.exp(-distance / 18000) * Math.sin(time + depth * 4) * 17;
-          if (column === 0) context.moveTo(x,y); else context.lineTo(x,y);
-          if (column % 3 === 0) points.push([x,y]);
-        }
-        context.strokeStyle = `rgba(${tint},${.04 + depth * (dark ? .21 : .13)})`;
-        context.lineWidth = row % 5 === 0 ? 1.1 : .55;
-        context.stroke();
-        for (const [x,y] of points) {
-          const traveling = .5 + .5 * Math.sin(x / width * 7 - time * 1.2 + row * .15);
-          context.fillStyle = `rgba(${tint},${.12 + traveling * .35})`;
-          context.beginPath();
-          context.arc(x,y,.65 + traveling * .48,0,Math.PI * 2);
-          context.fill();
-        }
-      }
-      // A moving pulse belongs to the generative artwork, not a fabricated metric.
-      const pulseX = width * ((time * .095) % 1);
-      const pulseY = height * .48 + Math.sin(pulseX / width * 6.28 - time * .58) * height * .14;
-      const glow = context.createRadialGradient(pulseX,pulseY,0,pulseX,pulseY,45);
-      glow.addColorStop(0,`rgba(${tint},${dark ? .2 : .12})`);
-      glow.addColorStop(1,`rgba(${tint},0)`);
-      context.fillStyle = glow;
-      context.fillRect(pulseX-45,pulseY-45,90,90);
-      state.frames++;
-      if (state.frames === 1 || state.frames % 12 === 0) canvas.dataset.frames = String(state.frames);
-    }
-    function resize() {
-      const box = canvas.getBoundingClientRect();
-      const ratio = Math.min(devicePixelRatio || 1,1.25);
-      state.width = box.width;
-      state.height = box.height;
-      canvas.width = Math.max(1,Math.round(box.width * ratio));
-      canvas.height = Math.max(1,Math.round(box.height * ratio));
-      context?.setTransform(ratio,0,0,ratio,0,0);
-      drawOnce();
-    }
-    function light(index, explicit = false) {
-      state.active = index;
-      stage.dataset.signal = String(index);
-      nodes.forEach((node, i) => node.classList.toggle("is-lit", i === index));
-      if (explicit) {
-        nodes.forEach((node, i) => node.setAttribute("aria-pressed", String(i === index)));
-        $("#flow-status").textContent = messages[index];
-        state.hold = 4;
-        state.age = 0;
-        const box = nodes[index].getBoundingClientRect();
-        ambient?.ripple(box.left + box.width / 2, box.top + box.height / 2);
-        drawOnce();
-      }
-    }
-    nodes.forEach((node,index) => node.addEventListener("click", () => light(index, true)));
-    // Focus stops auto-advancing so the keyboard-selected control stays stable.
-    stage.addEventListener("focusin", () => { state.hold = Infinity; });
-    stage.addEventListener("focusout", event => { if (!stage.contains(event.relatedTarget)) state.hold = 2; });
-    stage.addEventListener("pointermove",event => {
-      if (isReducedMotion() || coarseQuery.matches) return;
-      const box = canvas.getBoundingClientRect();
-      state.pointerX = event.clientX - box.left;
-      state.pointerY = event.clientY - box.top;
-    }, { passive:true });
-    stage.addEventListener("pointerleave", () => { state.pointerX = state.pointerY = -1000; });
-    new IntersectionObserver(entries => {
-      state.visible = entries[0].isIntersecting;
-      if (state.visible) scheduleFrame();
-    }, { rootMargin:"50px", threshold:0 }).observe(stage);
-    motionSubscribers.add(() => { state.age = 0; light(state.active); state.pointerX = state.pointerY = -1000; });
-    new ResizeObserver(resize).observe(stage);
-    resize();
-    light(0);
-    return { get visible() { return state.visible; }, drawOnce, step(now,dt) {
-      state.time += dt;
-      if (now - state.lastDraw > 1000 / (coarseQuery.matches ? 18 : 24)) { state.lastDraw = now; drawOnce(); }
-      if (!stage.contains(document.activeElement)) {
-        if (state.hold > 0) state.hold -= dt;
-        else {
-          state.age += dt;
-          if (state.age > 1.6) { state.age = 0; light((state.active + 1) % nodes.length); }
-        }
-      }
-    }};
-  }
-  signalFlow = createSignalFlow();
 
   function createSculpture() {
     const canvas = $("#sculpture");
@@ -1688,7 +1570,7 @@ html[data-suspended="true"] *,html[data-suspended="true"] *::before,html[data-su
 }
 
   scene = createSculpture();
-  backdrop = createPageBackdrop();
+  backdrop = null;
   function createAmbientField() {
     const canvas = $("#ambient-field");
     const context = canvas.getContext("2d",{alpha:true});
@@ -1830,7 +1712,7 @@ html[data-suspended="true"] *,html[data-suspended="true"] *::before,html[data-su
       drawOnce();
     }};
   }
-  ambient = createAmbientField();
+  ambient = null;
   mountInteractionLayer();
   function createCompanion() {
   const studio = $("#companion");
@@ -2293,12 +2175,12 @@ html[data-suspended="true"] *,html[data-suspended="true"] *::before,html[data-su
 
   createCompanion();
 
-  setSkill("backend");
   root.classList.add("js-ready");
   updateMotion();
   updateScroll();
   scheduleFrame();
 })();
 </script>
+  <script type="module" src="./signal-field.js?v=451706afda88"></script>
 </body>
 </html>

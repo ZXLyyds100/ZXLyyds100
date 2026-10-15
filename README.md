@@ -1,4 +1,4 @@
-<!-- signal-lab-profile: signal-lab-20261012-dd8bd9719d1c -->
+<!-- signal-lab-profile: signal-lab-20261015-2a2dfac7f1b1 -->
 
 <a href="https://zxlyyds100.github.io/ZXLyyds100/#companion">
   <picture>
@@ -23,6 +23,10 @@
   <a href="https://zxlyyds100.github.io/ZXLyyds100/"><b>进入我的交互主页 ↗</b></a>
   &nbsp; · &nbsp;
   <a href="https://zxlyyds100.github.io/ZXLyyds100/#companion">和小像打个招呼 ♡</a>
+  &nbsp; · &nbsp;
+  <a href="https://zxlyyds100.github.io/ZXLyyds100/#toolbox">看看我的技术栈 ↗</a>
+  &nbsp; · &nbsp;
+  <a href="https://zxlyyds100.github.io/ZXLyyds100/#signal-experiment">让想法产生回响 ↗</a>
   &nbsp; · &nbsp;
   <a href="https://blog.csdn.net/2401_87808951">翻翻我的笔记 ↗</a>
 </p>
@@ -60,6 +64,17 @@
 ### 把复杂，拆成有序。
 
 后端是主线，Agent 是正在探索的方向，前端是把想法做成可用交互的另一套工具。
+
+<a href="https://zxlyyds100.github.io/ZXLyyds100/#toolbox">
+  <picture>
+    <source media="(prefers-reduced-motion: reduce)" srcset="./assets/readme-v2/technology-bedroom-still-ce7d2660af.webp">
+    <img src="./assets/readme-v2/technology-bedroom-fb6a2b66d9.webp" width="1024" height="576" alt="粉发角色躺在床上看电脑的循环视频预览，Java、Go、Python、Spring Boot、MySQL、Redis、LangChain4j、Spring AI、RAG、MCP、Vue、JavaScript 和 HTML / CSS 漂浮在四周。点击进入完整技术栈交互。">
+  </picture>
+</a>
+
+<p align="center">
+  <sub>动态预览 · 点击进入网页，选择技术标签，查看它们如何连接。</sub>
+</p>
 
 <details>
   <summary><b>打开我的技术工具盒</b></summary>
