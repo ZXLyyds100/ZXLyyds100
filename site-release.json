@@ -1,8 +1,8 @@
 {
-  "release": "signal-lab-20261015-2a2dfac7f1b1",
-  "generatedAt": "2026-10-15T08:44:25.751Z",
-  "htmlSha256": "42b1033700d900edb16c7b40e3d8dc7ae759ea9fe6cc1a17ffeb5f5682fc4055",
-  "readmeSha256": "ab6abbca5af6e8f0b5e283735ec156feb1df8468ef120d99f5f72409bebd7f4b",
+  "release": "signal-lab-20261015-3d7ce2b40c84",
+  "generatedAt": "2026-10-15T09:02:12.166Z",
+  "htmlSha256": "93a7a6edef5a6f2b700b552271a5802566a82317dee9e2ea4fffdffae2502d21",
+  "readmeSha256": "8d2355849c13d1b27c867e109e3bbc2a2d24bebf9676abf8ed4c6bc285435b01",
   "profileMode": "vector-hero-and-animated-video-stack",
   "blogMode": "static-profile-overview",
   "csdnLiveEnabled": false,

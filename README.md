@@ -1,4 +1,4 @@
-<!-- signal-lab-profile: signal-lab-20261015-2a2dfac7f1b1 -->
+<!-- signal-lab-profile: signal-lab-20261015-3d7ce2b40c84 -->
 
 <a href="https://zxlyyds100.github.io/ZXLyyds100/#companion">
   <picture>
@@ -68,7 +68,7 @@
 <a href="https://zxlyyds100.github.io/ZXLyyds100/#toolbox">
   <picture>
     <source media="(prefers-reduced-motion: reduce)" srcset="./assets/readme-v2/technology-bedroom-still-ce7d2660af.webp">
-    <img src="./assets/readme-v2/technology-bedroom-fb6a2b66d9.webp" width="1024" height="576" alt="粉发角色躺在床上看电脑的循环视频预览，Java、Go、Python、Spring Boot、MySQL、Redis、LangChain4j、Spring AI、RAG、MCP、Vue、JavaScript 和 HTML / CSS 漂浮在四周。点击进入完整技术栈交互。">
+    <img src="./assets/readme-v2/technology-bedroom-fb6a2b66d9.webp" width="100%" alt="粉发角色躺在床上看电脑的循环视频预览，Java、Go、Python、Spring Boot、MySQL、Redis、LangChain4j、Spring AI、RAG、MCP、Vue、JavaScript 和 HTML / CSS 漂浮在四周。点击进入完整技术栈交互。">
   </picture>
 </a>
 
